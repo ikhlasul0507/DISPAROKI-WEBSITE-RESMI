@@ -1,7 +1,7 @@
-   <h2 class="text-center">Berita Dan Kegiatan</h2>
+  <!--================Blog Area =================-->
+    <section class="blog_area section-padding" style="background: linear-gradient(#00BFFF,   #87CEFA);">
+         <h2 class="text-center">Berita Dan Kegiatan</h2>
      <h2 class="text-center">Dinas Pariwisata dan Kebudayaan</h2>
-    <!--================Blog Area =================-->
-    <section class="blog_area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mb-2 mb-lg-0">
@@ -24,7 +24,7 @@
                                                 echo highlight_phrase($br->judul_berita, $high,'<font style="color:#dd4814; background:#dedede">', '</font>');
                                                 ?></h2>
                                             </a>
-                                            <p><?php 
+                                            <p style="color: black"><?php 
                                                 $kalimat = $br->deskripsiberita1;
                                                 $sub_kalimat = substr($kalimat,0,100);
                                                 echo highlight_phrase($sub_kalimat.'.....', $high,'<font style="color:#dd4814; background:#dedede">', '</font>');

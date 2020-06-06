@@ -49,7 +49,7 @@
    </script>
     
     
-                <div class="row">
+                <div class="row" style="background: linear-gradient(#00BFFF,   #87CEFA);">
                     <div class="col-12">
                         <h2 class="contact-title">Kontak</h2>
                     </div>
@@ -85,24 +85,24 @@
                     <?php foreach ($data_info as $dt):?>
                     <div class="col-lg-3 offset-lg-1">
                         <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-home"></i></span>
+                            <span class="contact-info__icon"><i class="ti-home" style="color: white"></i></span>
                             <div class="media-body">
                                 <h3>Alamat</h3>
-                                <p><?= $dt['alamat'];?></p>
+                                <p style="color: white"><?= $dt['alamat'];?></p>
                             </div>
                         </div>
                         <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                            <span class="contact-info__icon"><i class="ti-tablet" style="color: white"></i></span>
                             <div class="media-body">
                                 <h3>Telepon</h3>
-                                <p><?= $dt['handphone'];?></p>
+                                <p style="color: white"><?= $dt['handphone'];?></p>
                             </div>
                         </div>
                         <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-email"></i></span>
+                            <span class="contact-info__icon"><i class="ti-email" style="color: white"></i></span>
                             <div class="media-body">
                                 <h3>Email</h3>
-                                <p><?= $dt['email'];?></p>
+                                <p style="color: white"><?= $dt['email'];?></p>
                             </div>
                         </div>
                     </div>

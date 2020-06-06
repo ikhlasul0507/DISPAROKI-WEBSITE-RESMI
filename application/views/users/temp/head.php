@@ -10,6 +10,7 @@
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="icon"  type="image/png" href='<?= base_url('assets/users/');?>gambar/logo.png'>
+    
    
     <!-- Place favicon.ico in the root directory -->
     <!-- CSS here -->
@@ -38,5 +39,5 @@
     
 </head>
 
-<body>
+<body style="background: linear-gradient(#00BFFF,   #87CEFA); ">
 

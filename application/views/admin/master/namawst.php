@@ -324,7 +324,7 @@
                               <div class="col-md-6">
                                 <div class="input-group">
                                   <span class="input-group-addon"><i class="fa  fa-play-circle"></i></span>   
-                                  <input type="text" class="form-control" placeholder="Link Video" name="link_video" value="<?= $ws->link_video; ?>" required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus>
+                                  <input type="text" class="form-control" placeholder="Link Video" name="link_video" value="<?= $ws->link_video; ?>"  autocomplete="off" autofocus>
                                 </div>
                               </div>
                               <div class="col-md-6">
@@ -508,7 +508,7 @@
                               <div class="col-md-6">
                                 <div class="input-group">
                                   <span class="input-group-addon"><i class="fa  fa-play-circle"></i></span>   
-                                  <input type="text" class="form-control" placeholder="Link Video" name="link_video" required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus>
+                                  <input type="text" class="form-control" placeholder="Link Video" name="link_video"  autocomplete="off" autofocus>
                                 </div>
                               </div>
                               <div class="col-md-6">

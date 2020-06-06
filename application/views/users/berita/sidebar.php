@@ -1,6 +1,6 @@
-<div class="col-lg-4">
-                    <div class="blog_right_sidebar">
-                        <aside class="single_sidebar_widget search_widget">
+<div class="col-lg-4" >
+                    <div class="blog_right_sidebar" >
+                        <aside class="single_sidebar_widget search_widget" style="background-color: #1f7cbf">
                             <form method="post" action="<?= base_url();?>cari-pengumuman-pgqdrf7hmhysjdm4eos3/cari">
                                 <div class="form-group">
                                     <div class="input-group mb-3">
@@ -17,21 +17,21 @@
                             </form>
                         </aside>
 
-                        <aside class="single_sidebar_widget post_category_widget" >
+                        <aside class="single_sidebar_widget post_category_widget" style="background-color: #1f7cbf">
                             <h4 class="widget_title">Kategori</h4>
                             <ul class="list cat-list">
                                 <?php foreach ($wisata as $w):?>
                                 <li>
                                     <a href="<?= base_url();?><?= $w['link'];?>" class="d-flex">
-                                        <p><?= $w['nama_wisata'];?></p>
+                                        <p style="color: black" ><?= $w['nama_wisata'];?></p>
                                        
                                     </a>
                                 </li>
-                                <?php endforeach; ?>
+                                <?php endforeach;?>
                                 <?php foreach ($sarana as $s):?>
                                 <li>
                                     <a href="<?= base_url();?><?= $w['link'];?>" class="d-flex">
-                                        <p><?= $s['nama_sarana'];?></p>
+                                        <p style="color: black"><?= $s['nama_sarana'];?></p>
                                         
                                     </a>
                                 </li>
@@ -40,7 +40,7 @@
                             </ul>
                         </aside>
 
-                        <aside class="single_sidebar_widget popular_post_widget">
+                        <aside class="single_sidebar_widget popular_post_widget" style="background-color: #1f7cbf">
                             <marquee><h3 class="widget_title">Postingan Terakhir</h3></marquee>
                             <?php foreach ($limit_brtg as $lb):?>
                             <div class="media post_item">
@@ -53,7 +53,7 @@
                                                 echo $sub_kalimat.'....';
                                              ?></h3>
                                     </a>
-                                    <p><?= $lb->waktu_berita;?></p>
+                                    <p style="color: black"><?= $lb->waktu_berita;?></p>
                                 </div>
                             </div>
                             <?php endforeach; ?>

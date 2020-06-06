@@ -1,7 +1,6 @@
  <!-- bradcam_area  -->
     <!-- <div class="bradcam_area" style="background-image: ('/assets/users/gambar/pantai.jpg')"> -->
-        <div class="container">
-            <div class="row">
+            <div class="row" style="background: linear-gradient(#00BFFF,   #87CEFA);">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
                         <h2>PROFIL</h2>
@@ -12,11 +11,10 @@
                     </div>
                 </div>
             </div>
-        </div>
     <!-- </div> -->
     <!--/ bradcam_area  -->
     
-    <div class="about_story">
+    <div class="about_story" style="background: linear-gradient(#00BFFF,   #87CEFA);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -71,7 +69,7 @@
                                         <img style="height: 200px; width: 280px" src="<?= base_url();?>assets/admin/img/struktur/<?= $ds->photo;?>" alt="">
                                     </div>
                                     <div class="content">
-                                        <p class="d-flex align-items-center"><?= $ds->nama_jabatan;?> || <?= $ds->nama;?></p> 
+                                        <p class="d-flex align-items-center" style="color: white"><?= $ds->nama_jabatan;?> || <?= $ds->nama;?></p> 
                                     </div>
                                 </div>
                             </div>

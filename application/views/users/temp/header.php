@@ -5,7 +5,7 @@
   foreach ($info as $a): ?>
  <!-- header-start -->
     <header>
-        <div class="header-area ">
+        <div class="header-area " style="background: linear-gradient(to left,#00BFFF,   #87CEFA); ">
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid">
                     <div class="header_bottom_border">
@@ -24,7 +24,7 @@
                                             <li><a class="active" href="<?= base_url();?>">Home</a></li>
                                             <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-OcXpeRqt1DVZVG6yibaH">Profil</a></li>
                                             <li><a href="#">Destinasi<i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
+                                                <ul class="submenu" style="background: linear-gradient(#00BFFF,   #87CEFA)">
                                                         <?php foreach ($wisata as $wst) : ?>
                                                         <li><a href="<?= base_url();?><?= $wst['link'];?>"><?= $wst['nama_wisata']; ?></a></li>
                                                         <!-- -->
@@ -32,14 +32,14 @@
                                                 </ul>
                                             </li>
                                             <li><a href="#">Sarana<i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
+                                                <ul class="submenu" style="background: linear-gradient(#00BFFF,   #87CEFA)">
                                                     <?php foreach ($sarana as $srn) : ?>
                                                      <li><a href="<?= base_url();?><?= $srn['link'];?>"><?= $srn['nama_sarana']; ?></a></li>
                                                      <?php endforeach; ?>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Budaya<i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
+                                                <ul class="submenu" style="background: linear-gradient(#00BFFF,   #87CEFA)">
                                                     <?php foreach ($budaya as $bd) : ?>
                                                      <li><a href="<?= base_url();?><?= $bd['link_budaya'];?>"><?= $bd['nama_budaya']; ?></a></li>
                                                      <?php endforeach; ?>
@@ -58,14 +58,14 @@
                                     <div class="social_links d-none d-xl-block">
                                         <ul>
                                             <?php foreach ($media as $md) : ?>
-                                            <li><a href="<?= $md['link'];?>"><i class="<?= $md['icon'];?>"></i></a></li>
+                                            <li><a target="_blank" href="<?= $md['link'];?>"><i class="<?= $md['icon'];?>"></i></a></li>
                                             <?php endforeach; ?>
                                            <!--  -->
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="seach_icon">
+                            <div class="seach_icon" style="background: #00BFFF);">
                                 <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
                                     <i class="fa fa-search"></i>
                                 </a>

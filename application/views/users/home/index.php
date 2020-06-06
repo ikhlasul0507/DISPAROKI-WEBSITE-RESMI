@@ -95,15 +95,134 @@
     }
     mymap.on('click', onMapClick);
    </script>
+
+    <br>
+    <!-- video start -->
+<div class="testmonial_active owl-carousel">
+<?php foreach ($video as $wv):?>
+<div class="single_carousel">
+    <div class="video_area  overlay" style='background-image: url(assets/admin/img/master_wisata/<?= $wv->photo_wisata;?>);'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video_wrap text-center">
+                        <h3>Lihat Video</h3>
+                        <p style="color: white"><?= $wv->nama_master_wisata; ?></p>
+                        <div class="video_icon">
+                            <a class="popup-video video_play_button" href="https://www.youtube.com/watch?v=<?php
+                        $data= $wv->link_video;
+                        $namafile= substr($data,-11);
+                        echo $namafile;
+                        ?>">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php endforeach; ?>
+<?php foreach ($video_sar as $wv):?>
+    <div class="single_carousel">
+     <div class="video_area  overlay" style='background-image: url(assets/admin/img/master_sarana/<?= $wv->photo_sarana;?>);'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video_wrap text-center">
+                        <h3>Lihat Video</h3>
+                        <p style="color: white"><?= $wv->nama_master_sarana; ?></p>
+                        <div class="video_icon">
+                            <a class="popup-video video_play_button" href="https://www.youtube.com/watch?v=<?php
+                        $data= $wv->link_video;
+                        $namafile= substr($data,-11);
+                        echo $namafile;
+                        ?>">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php endforeach; ?>
+<?php foreach ($video_bud as $wv):?>
+    <div class="single_carousel">
+     <div class="video_area  overlay" style='background-image: url(assets/admin/img/master_budaya/<?= $wv->photo_budaya;?>);'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video_wrap text-center">
+                        <h3>Lihat Video</h3>
+                        <p style="color: white"><?= $wv->nama_master_budaya; ?></p>
+                        <div class="video_icon">
+                            <a class="popup-video video_play_button" href="https://www.youtube.com/watch?v=<?php
+                        $data= $wv->link_video;
+                        $namafile= substr($data,-11);
+                        echo $namafile;
+                        ?>">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php endforeach; ?>
+</div>
+<br>
    <br>
+
+    <div class="travel_variation_area" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_travel text-center">
+                        <a href="#" data-toggle="modal" data-target="#swisata">
+                        <div class="icon">
+                            <img style="width: 60px; height: 60px" src="<?= base_url('assets/users/');?>img/svg_icon/oasis.svg" alt="">
+                        </div>
+                        <h3 style="color: white">Grafik Sebaran Wisata </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_travel text-center">
+                        <a href="#" data-toggle="modal" data-target="#exampleSarana">
+                        <div class="icon">
+                            <img style="width: 60px; height: 60px" src="<?= base_url('assets/users/');?>img/svg_icon/sauna.svg" alt="">
+                        </div>
+                        <h3 style="color: white">Grafik Sebaran Sarana</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_travel text-center">
+                        <a href="#" data-toggle="modal" data-target="#exampleBudaya">
+                        <div class="icon">
+                            <img style="width: 60px; height: 60px" src="<?= base_url('assets/users/');?>img/svg_icon/dance.svg" alt="">
+                        </div>
+                        <h3 style="color: white">Grafik Sebaran Budaya</h3>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div><br>
+<!-- video finish -->
     <!-- popular_destination_area_start  -->
-    <div class="popular_destination_area">
+    <div class="popular_destination_area" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb_70">
-                        <h3>Budaya Populer</h3>
-                        <p>Destinasi Budaya Di Kabupaten Ogan Komering Ilir Provinsi Sumatera Selatan</p>
+                        <h3 style="color: white">Budaya Populer</h3>
+                        <p style="color: white">Destinasi Budaya Di Kabupaten Ogan Komering Ilir Provinsi Sumatera Selatan</p>
                     </div>
                 </div>
             </div>
@@ -130,83 +249,18 @@
         </div>
     </div>
     <!-- popular_destination_area_end  -->
-    <br>
-    <?php foreach ($video as $wv):?>
-    <div class="video_area video_bg overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="video_wrap text-center">
-                        <h3>Lihat Video</h3>
-                        <div class="video_icon">
-                            <a class="popup-video video_play_button" href="https://www.youtube.com/watch?v=<?php
-                        $data= $wv->link_video;
-                        $namafile= substr($data,-11);
-                        echo $namafile;
-                        ?>">
-                                <i class="fa fa-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php endforeach; ?>
-<?php foreach ($video_sar as $wv):?>
-    <div class="video_area video_bg overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="video_wrap text-center">
-                        <h3>Lihat Video</h3>
-                        <div class="video_icon">
-                            <a class="popup-video video_play_button" href="https://www.youtube.com/watch?v=<?php
-                        $data= $wv->link_video;
-                        $namafile= substr($data,-11);
-                        echo $namafile;
-                        ?>">
-                                <i class="fa fa-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php endforeach; ?>
-<?php foreach ($video_bud as $wv):?>
-    <div class="video_area video_bg overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="video_wrap text-center">
-                        <h3>Lihat Video</h3>
-                        <div class="video_icon">
-                            <a class="popup-video video_play_button" href="https://www.youtube.com/watch?v=<?php
-                        $data= $wv->link_video;
-                        $namafile= substr($data,-11);
-                        echo $namafile;
-                        ?>">
-                                <i class="fa fa-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php endforeach; ?>
-<br><br>
+
+
+<br>
 
     <!-- popular_destination_area_start  -->
-    <div class="popular_destination_area">
+    <div class="popular_destination_area" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb_70">
-                        <h3>Destinasi Populer</h3>
-                        <p>Destinasi Wisata Di Kabupaten Ogan Komering Ilir Provinsi Sumatera Selatan</p>
+                        <h3 style="color: white">Destinasi Populer</h3>
+                        <p style="color: white">Destinasi Wisata Di Kabupaten Ogan Komering Ilir Provinsi Sumatera Selatan</p>
                     </div>
                 </div>
             </div>
@@ -232,6 +286,49 @@
         </div>
     </div>
     <!-- popular_destination_area_end  -->
+    
+    <div class="recent_trip_area" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                     <div class="section_title text-center mb_70">
+                        <h3 style="color: white">Sarana Populer</h3>
+                        <p style="color: white">Sarana Wisata Di Kabupaten Ogan Komering Ilir Provinsi Sumatera Selatan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+               <?php if ($data_srn) { ?>
+                <?php foreach ($data_srn as $sr):?>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_trip">
+                        <div class="thumb">
+                            <img style="width:400px;height: 200px" src="<?= base_url();?>assets/admin/img/master_sarana/<?= $sr->photo_sarana;?>" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="date">
+                                <span style="color: white"><?= $sr->nama_master_sarana;?></span>
+                            </div>
+                            <a href="<?= base_url();?>Home/detail_srn/<?= $sr->id_sarana;?>">
+                                <h3 style="color:white">
+                                    <?php 
+                                    $kalimat = $sr->deskripsi_sarana1;
+                                    $sub_kalimat = substr($kalimat,0,50);
+                                    echo $sub_kalimat.'.....';
+                                    ?>
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+                 <?php }else{ ?>
+                <h4 align="center">Data Tidak Ada</h4>
+           <?php } ?>
+            </div>
+        </div>
+    </div>
 
     <!-- newletter_area_start  -->
     <div class="newletter_area overlay">
@@ -264,21 +361,21 @@
     </div>
     <!-- newletter_area_end  -->
 
-    <div class="popular_places_area">
+    <div class="popular_places_area" style="background: linear-gradient(#00BFFF,   #87CEFA);">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb_70">
-                        <h3>Berita Dan Kegiatan</h3>
-                        <p>Artikel Berita dan Kegiatan Dinas Pariwisata Ogan Komering Ilir</p>
+                        <h3 style="color: white">Berita Dan Kegiatan</h3>
+                        <p style="color: white">Artikel Berita dan Kegiatan Dinas Pariwisata Ogan Komering Ilir</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <?php if ($data_brt) { ?>
                 <?php foreach ($data_brt as $br):?>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_place">
+                <div class="col-lg-4 col-md-6" >
+                    <div class="single_place" style="height: 400px">
                         <div class="thumb">
                             <img style="height: 200px" src="<?= base_url();?>assets/admin/img/berita/<?= $br->photo_berita;?>" alt="">
                             <a href="<?= base_url();?>br1<?= $br->id_berita;?>5t/detail-pengumuman-KhmmqOdAo8ke86DOVcla" class="prise">Lihat</a>
@@ -314,61 +411,20 @@
                 <h4 align="center">Data Tidak Ada</h4>
            <?php } ?>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="more_place_btn text-center">
-                        <a class="boxed-btn4" href="#" data-toggle="modal" data-target="#exampleModal" href="#">Sampaikan Aspirasi</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
 
 
-    <div class="travel_variation_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_travel text-center">
-                        <a href="#" data-toggle="modal" data-target="#swisata">
-                        <div class="icon">
-                            <img style="width: 60px; height: 60px" src="<?= base_url('assets/users/');?>img/svg_icon/oasis.svg" alt="">
-                        </div>
-                        <h3>Grafik Sebaran Wisata </h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_travel text-center">
-                        <a href="#" data-toggle="modal" data-target="#exampleSarana">
-                        <div class="icon">
-                            <img style="width: 60px; height: 60px" src="<?= base_url('assets/users/');?>img/svg_icon/sauna.svg" alt="">
-                        </div>
-                        <h3>Grafik Sebaran Sarana</h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_travel text-center">
-                        <a href="#" data-toggle="modal" data-target="#exampleBudaya">
-                        <div class="icon">
-                            <img style="width: 60px; height: 60px" src="<?= base_url('assets/users/');?>img/svg_icon/dance.svg" alt="">
-                        </div>
-                        <h3>Grafik Sebaran Budaya</h3>
-                        </a>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </div>
 
 
     <!-- testimonial_area  -->
-    <div class="testimonial_area">
+    <div class="testimonial_area" style="background-color: #199fff">
         <div class="container">
             <div class="row">
+               
                 <div class="col-xl-12">
+
                     <div class="testmonial_active owl-carousel">
                         <?php foreach ($data_asp as $as):?>
                         <div class="single_carousel">
@@ -387,7 +443,7 @@
                                              ?>
                                         </p>
                                         <div class="testmonial_author">
-                                            <h3><?= $as['judul_aspirasi']; ?></h3>
+                                            <h3  style="color: white"><?= $as['judul_aspirasi']; ?></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -398,52 +454,17 @@
                       
                     </div>
                 </div>
+
             </div>
+            <center>>
+            <div class="col">
+            <a class="boxed-btn4 justify-content-center" href="#" data-toggle="modal" data-target="#exampleModal" href="#">Sampaikan Aspirasi</a>
+            </div>
+            </center>
         </div>
     </div>
     <!-- /testimonial_area  -->
 
-
-    <div class="recent_trip_area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb_70">
-                        <h3>Sarana</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-               <?php if ($data_srn) { ?>
-                <?php foreach ($data_srn as $sr):?>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_trip">
-                        <div class="thumb">
-                            <img style="width:400px;height: 200px" src="<?= base_url();?>assets/admin/img/master_sarana/<?= $sr->photo_sarana;?>" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="date">
-                                <span><?= $sr->nama_master_sarana;?></span>
-                            </div>
-                            <a href="<?= base_url();?>Home/detail_srn/<?= $sr->id_sarana;?>">
-                                <h3>
-                                    <?php 
-                                    $kalimat = $sr->deskripsi_sarana1;
-                                    $sub_kalimat = substr($kalimat,0,50);
-                                    echo $sub_kalimat.'.....';
-                                    ?>
-                                </h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <?php endforeach; ?>
-                 <?php }else{ ?>
-                <h4 align="center">Data Tidak Ada</h4>
-           <?php } ?>
-            </div>
-        </div>
-    </div>
 
 
   <!-- Modal -->
@@ -462,7 +483,7 @@
      <!-- Modal -->
   <div class="modal fade custom_search_pop" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content" style="background-color: #fc5603">
+      <div class="modal-content" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
         <form role="form" action="<?= base_url();?>Home/tambahasp" method="post" enctype="multipart/form-data">
         <div class="container">
              <h3 class="text-center mt-3" style="color: white">Formulir Aspirasi</h3><hr>
@@ -490,7 +511,7 @@
     <!-- Modal -->
   <div class="modal fade custom_search_pop" id="exampleRekomendasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content" style="background-color: #fc5603">
+      <div class="modal-content" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
         <form role="form" action="<?= base_url();?>Home/tambahpgj" method="post" enctype="multipart/form-data">
         <div class="container">
              <h3 class="text-center mt-3" style="color: white">Rekomendasi Wisata</h3><hr>

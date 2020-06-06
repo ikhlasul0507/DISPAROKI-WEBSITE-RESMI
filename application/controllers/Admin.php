@@ -1688,7 +1688,7 @@ class Admin extends CI_Controller {
             'smtp_user' => 'beramal.com05@gmail.com',  // Email gmail
             'smtp_pass'   => 'beramal.com_05',  // Password gmail
             'smtp_crypto' => 'ssl',
-            'smtp_port'   => 465,
+            'smtp_port'   => 587,
             'crlf'    => "\r\n",
             'newline' => "\r\n"
         ];
@@ -1702,12 +1702,10 @@ class Admin extends CI_Controller {
         // Email penerima
         $this->email->to($row['email_kontak']); // Ganti dengan email tujuan
 
-        // Lampiran email, isi dengan url/path file
-        $this->email->attach('https://dispar.bulelengkab.go.id/banner/dinas-pariwisata-kabupaten-buleleng-mengucapkan-selamat-menunaikan-ibadah-puasa-20');
-
         // Subject email
         $this->email->subject('Pesan Balasan Dari Dinas Kebudayaan Dan Pariwisata kabupaten Ogan Komering Ilir');
 
+         $this->email->attach(base_url().'assets/users/gambar/logo.png');
         // Isi email
         $this->email->message("Terima Kasih Informasi Yang Telah Diberikan <br><br>Nama : ".$row['nama_kontak']."<br>Email : ".$row['email_kontak']."<br>Judul : ".$row['judul_kontak']."<br>Pesan : ".$row['pesan_kontak']."<br>Informasi Anda Akan Sangat Membantu Dalam Mencapai Dinas Kebudayaan dan Pariwisata kabupaten Ogan Komering Ilir Menjadi Lebih Baik<br><br>Admin_Disparoki@disparoki.org");
 
@@ -2082,7 +2080,8 @@ class Admin extends CI_Controller {
                     $new_image = $this->upload->data('file_name');
                     $this->db->set('photo', $new_image);
                 } else {
-                    echo $this->upload->dispay_errors();
+                    $data = $this->session->set_flashdata('pesan','Photo Gagal Upload');
+					redirect('admin/profil',$data);
                 }
             }
 

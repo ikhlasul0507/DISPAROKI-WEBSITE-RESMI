@@ -171,7 +171,7 @@ class Auth extends CI_Controller {
             $this->email->attach(base_url().'assets/users/gambar/logo.png');
         }else if ($type == 'forgot') {
             $this->email->subject('Reset Password');
-            $this->email->message('Klik Link Berikut Untuk Mengubah Password : <a href="' . base_url() . 'auth/resetpassword?email=' . $this->input->post('email') . '&token=' . urlencode($token) . '">Reset Password</a>');
+            $this->email->message('Klik Link Berikut Untuk Mengubah Password :<br> <a class="btn btn-primary" href="' . base_url() . 'auth/resetpassword?email=' . $this->input->post('email') . '&token=' . urlencode($token) . '">Reset Password</a>');
         }
         if ($this->email->send()) {
             return true;

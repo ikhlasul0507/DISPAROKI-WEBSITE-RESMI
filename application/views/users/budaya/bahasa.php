@@ -1,4 +1,4 @@
-<div class="header justify-content-center">
+<div class="header justify-content-center" style="background: linear-gradient(#00BFFF,   #87CEFA);">
     <h4 class="text-center">Persebaran Bahasa Di Kabupaten Ogan Komering Ilir</h4>
 </div>
 <div id="<?php if($peta['is_active']==1){ echo "mapid";}?>" style="z-index: 2"></div>
@@ -67,14 +67,14 @@
     mymap.on('click', onMapClick);
    </script>
 
-    <div class="popular_places_area">
+    <div class="popular_places_area" style="background: linear-gradient(#00BFFF,   #87CEFA);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                      <div class="filter_result_wrap">
                         <h3>Filter Pencarian</h3>
                         <form method="post" action="<?= base_url();?>Bahasa/cari">
-                        <div class="filter_bordered">
+                        <div class="filter_bordered" style="background-color: white">
                             <div class="filter_inner">
                                 <div class="row">
                                     <div class="col-lg-12">

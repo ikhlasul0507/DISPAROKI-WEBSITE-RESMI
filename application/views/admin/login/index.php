@@ -2,7 +2,7 @@
 <div class="flash-data" data-flashdata="<?= $this->session->flashdata('pesan'); ?>">
                   </div>
                   <!-- end notifikasi -->
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
 <div class="login-box">
   <div class="login-logo">
     <img style="width: 100%; height: 100px" src="<?= base_url('assets/users/');?>gambar/logo.png" alt="">

@@ -1,14 +1,14 @@
 <?php foreach ($data_srn as $ds):?>
-<div class="destination_details_info">
+<div class="destination_details_info" style="background: linear-gradient(#00BFFF,   #87CEFA);">
         <div class="container">
             <div class="row justify-content-center">
 
-                <div class="col-lg-8 col-md-9">
+                <div class="col-lg-12 col-md-9">
                     <h3><?= $ds->nama_master_sarana; ?></h3><hr>
                     <!-- Video -->
                     <iframe width="100%" height="400" src="<?= $ds->link_video; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="col-lg-8 col-md-9">
+                <div class="col-lg-12 col-md-9">
 
                     <div class="destination_info">
                         
