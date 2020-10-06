@@ -7,6 +7,7 @@ class Home extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->library('Ciqrcode');
+
 	}
 
 	public function index()
@@ -53,6 +54,7 @@ class Home extends CI_Controller {
 	}
 	public function detail_wst($id_master_wisata)
 	{
+		
 		$data['title']= "Destinasi Wisata";
 		$data['wisata'] = $this->Model_user->Allwisata();
 		$data['sarana'] = $this->Model_user->Allsarana();
@@ -245,15 +247,55 @@ class Home extends CI_Controller {
 		$this->load->view('users/temp/footer');
 	}
 	//Generate QRCode
-	public function QRcode($kodenya)
+	public function QRcode($id_master_wisata)
 	{
-		//render ke bentuk png
-		QRcode::png(
-			$kodenya,
-			$outfile = false,
-			$level =QR_ECLEVEL_H,
-			$size = 6,
-			$margin = 2
-		);
+		$data['wisata']= $this->db->get_where('tbl_master_wisata', ['id_master_wisata' => $id_master_wisata])->row_array();
+
+		$isi = $data['wisata']['link_google'];
+		$nama = $data['wisata']['nama_master_wisata'];
+		
+		//prameter
+		$params['data'] = $isi;
+		$params['level'] = 'H';
+		$params['size'] = 10;
+		$params['savename'] = FCPATH.'tes.png';
+		$this->ciqrcode->generate($params);
+
+		echo '<center><h4>'.$nama.'</h4>Scan Alamat : '.$isi.'<br><img src="'.base_url().'tes.png" />';
+		
+	}
+	public function QRcodesar($id_sarana)
+	{
+		$data['sarana']= $this->db->get_where('tbl_master_sarana', ['id_sarana' => $id_sarana])->row_array();
+
+		$isi = $data['sarana']['link_google'];
+		$nama = $data['sarana']['nama_master_sarana'];
+		
+		//prameter
+		$params['data'] = $isi;
+		$params['level'] = 'H';
+		$params['size'] = 10;
+		$params['savename'] = FCPATH.'tes.png';
+		$this->ciqrcode->generate($params);
+
+		echo '<center><h4>'.$nama.'</h4>Scan Alamat : '.$isi.'<br><img src="'.base_url().'tes.png" />';
+		
+	}
+	public function QRcodebud($id_master_budaya)
+	{
+		$data['budaya']= $this->db->get_where('tbl_master_budaya', ['id_master_budaya' => $id_master_budaya])->row_array();
+
+		$isi = $data['budaya']['link_google'];
+		$nama = $data['budaya']['nama_master_budaya'];
+		
+		//prameter
+		$params['data'] = $isi;
+		$params['level'] = 'H';
+		$params['size'] = 10;
+		$params['savename'] = FCPATH.'tes.png';
+		$this->ciqrcode->generate($params);
+
+		echo '<center><h4>'.$nama.'</h4>Scan Alamat : '.$isi.'<br><img src="'.base_url().'tes.png" />';
+		
 	}
 }

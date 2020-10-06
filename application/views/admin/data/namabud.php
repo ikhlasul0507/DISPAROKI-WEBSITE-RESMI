@@ -26,7 +26,8 @@
               </div>
             </div>
             <div class="box-body" id="printkec">
-              <table id="example2" class="table table-bordered table-striped">
+              <div class="table-responsive">
+              <table id="example2" class="table table-bordered table-striped table-responsive">
                 <thead>
                 <tr>
                   <th>ID</th>
@@ -59,6 +60,7 @@
                 </tr>
                 </tfoot>
               </table>
+            </div>
             </div>
             <!-- /.box-body -->
           </div>

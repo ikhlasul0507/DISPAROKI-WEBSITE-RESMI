@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?= $judul; ?></title>
   <!-- Tell the browser to be responsive to screen width -->
+   <meta property="og:title" content="Selamat Datang" />
+    <meta property="og:description" content="Dinas Kebudayaan Dan Pariwisata Kabupaten Ogan Komering Ilir" />
+    
+    <meta content='<?= base_url('assets/users/');?>gambar/logo.png' property='og:image'/>
+    
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="<?= base_url('assets/admin/');?>/bower_components/bootstrap/dist/css/bootstrap.min.css">

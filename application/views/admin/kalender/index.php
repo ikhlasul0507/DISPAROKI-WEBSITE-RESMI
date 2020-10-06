@@ -46,7 +46,7 @@
             <div class="box-header">
               <i class="ion ion-clipboard"></i>
 
-              <h3 class="box-title">Agenda Of Event</h3>
+              <h3 class="box-title">Agenda</h3>
 
             </div>
             <!-- /.box-header -->

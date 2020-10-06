@@ -443,7 +443,7 @@
                                              ?>
                                         </p>
                                         <div class="testmonial_author">
-                                            <h3  style="color: white"><?= $as['judul_aspirasi']; ?></h3>
+                                            <h3  style="color: white"> <?= $as['judul_aspirasi']; ?></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -628,121 +628,121 @@
 
     <!-- AdminLTE for demo purposes -->
    <?php 
-      $a = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='LEM'");
-      $lem= $a->num_rows();
-      $b = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='LEJ'");
-      $lej= $b->num_rows();
-      $c = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='MES'");
-      $mes= $c->num_rows();
-      $d = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='SUM'");
-      $sum= $d->num_rows();
-      $e = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='MEM'");
-      $mem= $e->num_rows();
-      $f = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='MER'");
-      $mer= $f->num_rows();
-      $g = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='TUS'");
-      $tus= $g->num_rows();
-      $h = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='CEL'");
-      $cel= $h->num_rows();
-      $i = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='PED'");
-      $ped= $i->num_rows();
-      $j = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='PER'");
-      $per= $j->num_rows();
-      $k = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='TGL'");
-      $tgl= $k->num_rows();
-      $l = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='TEG'");
-      $teg= $l->num_rows();
-      $m = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='KAG'");
-      $kag= $m->num_rows();
-      $n = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='SPP'");
-      $spp= $n->num_rows();
-      $o = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='JEJ'");
-      $jej= $o->num_rows();
-      $p = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='PAM'");
-      $pam= $p->num_rows();
-      $q = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='PAL'");
-      $pal= $q->num_rows();
-      $r = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='ASU'");
-      $asu= $r->num_rows();
+      $a = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='1'");
+      $a1= $a->num_rows();
+      $b = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='2'");
+      $a2= $b->num_rows();
+      $c = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='3'");
+      $a3= $c->num_rows();
+      $d = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='4'");
+      $a4= $d->num_rows();
+      $e = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='5'");
+      $a5= $e->num_rows();
+      $f = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='6'");
+      $a6= $f->num_rows();
+      $g = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='7'");
+      $a7= $g->num_rows();
+      $h = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='8'");
+      $a8= $h->num_rows();
+      $i = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='9'");
+      $a9= $i->num_rows();
+      $j = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='10'");
+      $a10= $j->num_rows();
+      $k = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='11'");
+      $a11= $k->num_rows();
+      $l = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='12'");
+      $a12= $l->num_rows();
+      $m = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='13'");
+      $a13= $m->num_rows();
+      $n = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='14'");
+      $a14= $n->num_rows();
+      $o = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='15'");
+      $a15= $o->num_rows();
+      $p = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='16'");
+      $a16= $p->num_rows();
+      $q = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='17'");
+      $a17= $q->num_rows();
+      $r = $this->db->query("SELECT *FROM tbl_master_wisata WHERE kode_kecamatan='18'");
+      $a18= $r->num_rows();
 
 
       //untuk sarana
 
-      $a = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='LEM'");
-      $lems= $a->num_rows();
-      $b = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='LEJ'");
-      $lejs= $b->num_rows();
-      $c = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='MES'");
-      $mess= $c->num_rows();
-      $d = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='SUM'");
-      $sums= $d->num_rows();
-      $e = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='MEM'");
-      $mems= $e->num_rows();
-      $f = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='MER'");
-      $mers= $f->num_rows();
-      $g = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='TUS'");
-      $tuss= $g->num_rows();
-      $h = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='CEL'");
-      $cels= $h->num_rows();
-      $i = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='PED'");
-      $peds= $i->num_rows();
-      $j = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='PER'");
-      $pers= $j->num_rows();
-      $k = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='TGL'");
-      $tgls= $k->num_rows();
-      $l = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='TEG'");
-      $tegs= $l->num_rows();
-      $m = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='KAG'");
-      $kags= $m->num_rows();
-      $n = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='SPP'");
-      $spps= $n->num_rows();
-      $o = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='JEJ'");
-      $jejs= $o->num_rows();
-      $p = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='PAM'");
-      $pams= $p->num_rows();
-      $q = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='PAL'");
-      $pals= $q->num_rows();
-      $r = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='ASU'");
-      $asus= $r->num_rows();
+      $a = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='1'");
+      $b1= $a->num_rows();
+      $b = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='2'");
+      $b2= $b->num_rows();
+      $c = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='3'");
+      $b3= $c->num_rows();
+      $d = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='4'");
+      $b4= $d->num_rows();
+      $e = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='5'");
+      $b5= $e->num_rows();
+      $f = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='6'");
+      $b6= $f->num_rows();
+      $g = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='7'");
+      $b7= $g->num_rows();
+      $h = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='8'");
+      $b8= $h->num_rows();
+      $i = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='9'");
+      $b9= $i->num_rows();
+      $j = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='10'");
+      $b10= $j->num_rows();
+      $k = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='11'");
+      $b11= $k->num_rows();
+      $l = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='12'");
+      $b12= $l->num_rows();
+      $m = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='13'");
+      $b13= $m->num_rows();
+      $n = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='14'");
+      $b14= $n->num_rows();
+      $o = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='15'");
+      $b15= $o->num_rows();
+      $p = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='16'");
+      $b16= $p->num_rows();
+      $q = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='17'");
+      $b17= $q->num_rows();
+      $r = $this->db->query("SELECT *FROM tbl_master_sarana WHERE kode_kecamatan='18'");
+      $b18= $r->num_rows();
 
        //untuk budaya
 
-      $a = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='LEM'");
-      $lemsb= $a->num_rows();
-      $b = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='LEJ'");
-      $lejsb= $b->num_rows();
-      $c = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='MES'");
-      $messb= $c->num_rows();
-      $d = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='SUM'");
-      $sumsb= $d->num_rows();
-      $e = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='MEM'");
-      $memsb= $e->num_rows();
-      $f = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='MER'");
-      $mersb= $f->num_rows();
-      $g = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='TUS'");
-      $tussb= $g->num_rows();
-      $h = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='CEL'");
-      $celsb= $h->num_rows();
-      $i = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='PED'");
-      $pedsb= $i->num_rows();
-      $j = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='PER'");
-      $persb= $j->num_rows();
-      $k = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='TGL'");
-      $tglsb= $k->num_rows();
-      $l = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='TEG'");
-      $tegsb= $l->num_rows();
-      $m = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='KAG'");
-      $kagsb= $m->num_rows();
-      $n = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='SPP'");
-      $sppsb= $n->num_rows();
-      $o = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='JEJ'");
-      $jejsb= $o->num_rows();
-      $p = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='PAM'");
-      $pamsb= $p->num_rows();
-      $q = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='PAL'");
-      $palsb= $q->num_rows();
-      $r = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='ASU'");
-      $asusb= $r->num_rows();
+      $a = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='1'");
+      $c1= $a->num_rows();
+      $b = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='2'");
+      $c2= $b->num_rows();
+      $c = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='3'");
+      $c3= $c->num_rows();
+      $d = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='4'");
+      $c4= $d->num_rows();
+      $e = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='5'");
+      $c5= $e->num_rows();
+      $f = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='6'");
+      $c6= $f->num_rows();
+      $g = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='7'");
+      $c7= $g->num_rows();
+      $h = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='8'");
+      $c8= $h->num_rows();
+      $i = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='9'");
+      $c9= $i->num_rows();
+      $j = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='10'");
+      $c10= $j->num_rows();
+      $k = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='11'");
+      $c11= $k->num_rows();
+      $l = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='12'");
+      $c12= $l->num_rows();
+      $m = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='13'");
+      $c13= $m->num_rows();
+      $n = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='14'");
+      $c14= $n->num_rows();
+      $o = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='15'");
+      $c15= $o->num_rows();
+      $p = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='16'");
+      $c16= $p->num_rows();
+      $q = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='17'");
+      $c17= $q->num_rows();
+      $r = $this->db->query("SELECT *FROM tbl_master_budaya WHERE kode_kecamatan='18'");
+      $c18= $r->num_rows();
 
     ?>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -766,24 +766,24 @@
             backgroundColor: '#18fc03',
             borderColor: '##93C3D2',
             data: [
-              '<?= $asu;?>',
-              '<?= $cel;?>',
-              '<?= $jej;?>',
-              '<?= $kag;?>',
-              '<?= $mem;?>',
-              '<?= $mer;?>',
-              '<?= $pam;?>',
-              '<?= $ped;?>',
-              '<?= $per;?>',
-              '<?= $spp;?>',
-              '<?= $sum;?>',
-              '<?= $teg;?>',
-              '<?= $tus;?>',
-              '<?= $lej;?>',
-              '<?= $lem;?>',
-              '<?= $mes;?>',
-              '<?= $pal;?>',
-              '<?= $tgl;?>'    
+              '<?= $a1;?>',
+              '<?= $a2;?>',
+              '<?= $a3;?>',
+              '<?= $a4;?>',
+              '<?= $a5;?>',
+              '<?= $a6;?>',
+              '<?= $a7;?>',
+              '<?= $a8;?>',
+              '<?= $a9;?>',
+              '<?= $a10;?>',
+              '<?= $a11;?>',
+              '<?= $a12;?>',
+              '<?= $a13;?>',
+              '<?= $a14;?>',
+              '<?= $a15;?>',
+              '<?= $a16;?>',
+              '<?= $a17;?>',
+              '<?= $a18;?>'    
           ]
         }]
     },
@@ -809,24 +809,24 @@
             backgroundColor: '#ADD8E6',
             borderColor: '##93C3D2',
             data: [
-              '<?= $asus;?>',
-              '<?= $cels;?>',
-              '<?= $jejs;?>',
-              '<?= $kags;?>',
-              '<?= $mems;?>',
-              '<?= $mers;?>',
-              '<?= $pams;?>',
-              '<?= $peds;?>',
-              '<?= $pers;?>',
-              '<?= $spps;?>',
-              '<?= $sums;?>',
-              '<?= $tegs;?>',
-              '<?= $tuss;?>',
-              '<?= $lejs;?>',
-              '<?= $lems;?>',
-              '<?= $mess;?>',
-              '<?= $pals;?>',
-              '<?= $tgls;?>'    
+              '<?= $b1;?>',
+              '<?= $b2;?>',
+              '<?= $b3;?>',
+              '<?= $b4;?>',
+              '<?= $b5;?>',
+              '<?= $b6;?>',
+              '<?= $b7;?>',
+              '<?= $b8;?>',
+              '<?= $b9;?>',
+              '<?= $b10;?>',
+              '<?= $b11;?>',
+              '<?= $b12;?>',
+              '<?= $b13;?>',
+              '<?= $b14;?>',
+              '<?= $b15;?>',
+              '<?= $b16;?>',
+              '<?= $b17;?>',
+              '<?= $b18;?>'    
           ]
         }]
     },
@@ -852,24 +852,24 @@
             backgroundColor: '#a103fc',
             borderColor: '##93C3D2',
             data: [
-              '<?= $asusb;?>',
-              '<?= $celsb;?>',
-              '<?= $jejsb;?>',
-              '<?= $kagsb;?>',
-              '<?= $memsb;?>',
-              '<?= $mersb;?>',
-              '<?= $pamsb;?>',
-              '<?= $pedsb;?>',
-              '<?= $persb;?>',
-              '<?= $sppsb;?>',
-              '<?= $sumsb;?>',
-              '<?= $tegsb;?>',
-              '<?= $tussb;?>',
-              '<?= $lejsb;?>',
-              '<?= $lemsb;?>',
-              '<?= $messb;?>',
-              '<?= $palsb;?>',
-              '<?= $tglsb;?>'    
+              '<?= $c1;?>',
+              '<?= $c2;?>',
+              '<?= $c3;?>',
+              '<?= $c4;?>',
+              '<?= $c5;?>',
+              '<?= $c6;?>',
+              '<?= $c7;?>',
+              '<?= $c8;?>',
+              '<?= $c9;?>',
+              '<?= $c10;?>',
+              '<?= $c11;?>',
+              '<?= $c12;?>',
+              '<?= $c13;?>',
+              '<?= $c14;?>',
+              '<?= $c15;?>',
+              '<?= $c16;?>',
+              '<?= $c17;?>',
+              '<?= $c18;?>'    
           ]
         }]
     },

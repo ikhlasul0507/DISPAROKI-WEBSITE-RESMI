@@ -64,8 +64,8 @@ class Admin extends CI_Controller {
 	{
 
 		$data = array(
-				'kode_kecamatan' => $this->input->post('kode_kecamatan'),
-				'nama_kecamatan' => $this->input->post('nama_kecamatan')
+				'kode_kecamatan' => htmlspecialchars($this->input->post('kode_kecamatan')),
+				'nama_kecamatan' => htmlspecialchars($this->input->post('nama_kecamatan'))
 			);
 		$this->MA->tambahkec($data);
 		$data = $this->session->set_flashdata('pesan', 'Data Berhasil Di Tambah  !');
@@ -81,8 +81,8 @@ class Admin extends CI_Controller {
 	public function ubahkec($id)
 	{
 		$data = array(
-				'kode_kecamatan' => $this->input->post('kode_kecamatan'),
-				'nama_kecamatan' => $this->input->post('nama_kecamatan')
+				'kode_kecamatan' => htmlspecialchars($this->input->post('kode_kecamatan')),
+				'nama_kecamatan' => htmlspecialchars($this->input->post('nama_kecamatan'))
 			);
 		$pesan = $this->session->set_flashdata('pesan', 'Data Berhasil Di Ubah  !');
 		$this->MA->ubahkec($id,$data);
@@ -387,6 +387,19 @@ class Admin extends CI_Controller {
 	//hapus VISI
 	public function vjxypokfgfajpqueznym($id_visi)
 	{
+		$visi = $this->db->get_where('tbl_visi',['id_visi'=>$id_visi])->row_array();
+
+
+		$a = $visi['visi'];
+		$d = 'Data Visi';
+
+		$data = [
+			'jenis_histori' => $d,
+			'isi_histori' => $a
+		];
+
+		$this->db->insert('tbl_histori_data',$data);
+
 		$this->MA->hapusvis($id_visi);
 		$data = $this->session->set_flashdata('pesan', 'Data Berhasil Di Hapus  !');
 		redirect('admin/namavis',$data);
@@ -447,6 +460,19 @@ class Admin extends CI_Controller {
 	//hapus VISI
 	public function vxcqzgeaobzlyywvjvfb($id_misi)
 	{
+		$misi = $this->db->get_where('tbl_misi',['id_misi'=>$id_misi])->row_array();
+
+
+		$a = $misi['misi'];
+		$d = 'Data Misi';
+
+		$data = [
+			'jenis_histori' => $d,
+			'isi_histori' => $a
+		];
+
+		$this->db->insert('tbl_histori_data',$data);
+
 		$this->MA->hapusmis($id_misi);
 		$data = $this->session->set_flashdata('pesan', 'Data Berhasil Di Hapus  !');
 		redirect('admin/namamis',$data);
@@ -527,6 +553,21 @@ class Admin extends CI_Controller {
 	//hapus MEDIA SOSIAL
 	public function ksqaxicfwsewqtpzygtj($id)
 	{
+		$media = $this->db->get_where('tbl_media_sosial',['id'=>$id])->row_array();
+
+
+		$a = $media['nama'];
+		$b = $media['link'];
+		$c = $a.'-'.$b;
+		$d = 'Data Media Sosial';
+
+		$data = [
+			'jenis_histori' => $d,
+			'isi_histori' => $c
+		];
+
+		$this->db->insert('tbl_histori_data',$data);
+
 		$this->MA->hapusmed($id);
 		$data = $this->session->set_flashdata('pesan', 'Data Berhasil Di Hapus  !');
 		redirect('admin/namamed',$data);
@@ -677,6 +718,18 @@ class Admin extends CI_Controller {
 	{	
 		//ambil data by id
 		$data = $this->MA->getid($id_struktur);
+
+		$a = $data['kode_jabatan'];
+		$b = $data['nama'];
+		$c = $a.'-'.$b;
+		$d = 'Data Struktur';
+
+		$data = [
+			'jenis_histori' => $d,
+			'isi_histori' => $c
+		];
+
+		$this->db->insert('tbl_histori_data',$data);
 		//hapus photo di folder
 		unlink(FCPATH.'/assets/admin/img/struktur/'.$data['photo']);
 		//hapus data di database
@@ -953,6 +1006,8 @@ class Admin extends CI_Controller {
 				'status_video'=> $this->input->post('status_video'),
 				'status_wisata'=> $this->input->post('status_wisata')
 			);
+				
+
 		if (!empty($_FILES['photo_wisata']['name'])) 
 			{
 				$upload = $this->_do_upload_wisata();
@@ -1233,7 +1288,7 @@ class Admin extends CI_Controller {
 		
 		$data = array(
 				'kode_master_budaya' => $this->input->post('kode_master_budaya'),
-				'kode_wisata' => $this->input->post('kode_budaya'),
+				'kode_budaya' => $this->input->post('kode_budaya'),
 				'kode_kecamatan'=> $this->input->post('kode_kecamatan'),
 				'kode_desa'=> $this->input->post('kode_desa'),
 				'nama_master_budaya'=> $this->input->post('nama_master_budaya'),
@@ -1390,6 +1445,7 @@ class Admin extends CI_Controller {
 		$data['data_brt']= $this->MA->listbrt();
 		$data['peta'] = $this->db->get('tbl_peta')->row_array();
 		$data['user'] = $this->db->get_where('tbl_user', ['email' => $this->session->userdata('email')])->row_array();
+		
 		$this->load->view('admin/asst/header',$data);
 		$this->load->view('admin/beranda/header',$data);
 		$this->load->view('admin/beranda/sidebar',$data);
@@ -1402,18 +1458,18 @@ class Admin extends CI_Controller {
 	public function tambahbrt()
 	{
 		$data = array(
-				'kode_berita' => $this->input->post('kode_berita'),
-				'kode_kecamatan'=> $this->input->post('kode_kecamatan'),
-				'kode_desa'=> $this->input->post('kode_desa'),
-				'kode_wisata'=> $this->input->post('kode_wisata'),
-				'kode_sarana'=>$this->input->post('kode_sarana'),
-				'waktu_berita'=> $this->input->post('waktu_berita'),
-				'photo_berita'=> $this->input->post('photo_berita'),
-				'judul_berita'=> $this->input->post('judul_berita'),
-				'deskripsiberita1'=> $this->input->post('deskripsiberita1'),
-				'deskripsiberita2'=> $this->input->post('deskripsiberita2'),
-				'deskripsiberita3'=> $this->input->post('deskripsiberita3'),
-				'status_berita'=> $this->input->post('status_berita')
+				'kode_berita' => htmlspecialchars($this->input->post('kode_berita')),
+				'kode_kecamatan'=> htmlspecialchars($this->input->post('kode_kecamatan')),
+				'kode_desa'=> htmlspecialchars($this->input->post('kode_desa')),
+				'kode_wisata'=> htmlspecialchars($this->input->post('kode_wisata')),
+				'kode_sarana'=>htmlspecialchars($this->input->post('kode_sarana')),
+				'waktu_berita'=> htmlspecialchars($this->input->post('waktu_berita')),
+				'photo_berita'=> htmlspecialchars($this->input->post('photo_berita')),
+				'judul_berita'=> htmlspecialchars($this->input->post('judul_berita')),
+				'deskripsiberita1'=> htmlspecialchars($this->input->post('deskripsiberita1')),
+				'deskripsiberita2'=> htmlspecialchars($this->input->post('deskripsiberita2')),
+				'deskripsiberita3'=> htmlspecialchars($this->input->post('deskripsiberita3')),
+				'status_berita'=> htmlspecialchars($this->input->post('status_berita'))
 			);
 		if (!empty($_FILES['photo_berita']['name'])) 
 			{
@@ -1447,6 +1503,21 @@ class Admin extends CI_Controller {
 	{	
 		//ambil data by id
 		$data = $this->MA->getidberita($id_berita);
+
+		$a = $data['waktu_berita'];
+		$b = $data['judul_berita'];
+		$f = $data['deskripsiberita1'];
+		$g = $data['deskripsiberita2'];
+		$h = $data['deskripsiberita3'];
+		$c = $a.'-'.$b.'-'.$f.'-'.$g.'-'.$h;
+		$d = 'Data Berita';
+
+		$save = [
+			'jenis_histori' => $d,
+			'isi_histori' => $c
+		];
+
+		$this->db->insert('tbl_histori_data',$save);
 		//hapus photo di folder
 		unlink(FCPATH.'/assets/admin/img/berita/'.$data['photo_berita']);
 		//hapus data di database
@@ -1461,19 +1532,20 @@ class Admin extends CI_Controller {
 		$row = $this->MA->getidberita($id_berita);
 		
 		$data = array(
-				'kode_berita' => $this->input->post('kode_berita'),
-				'kode_kecamatan'=> $this->input->post('kode_kecamatan'),
-				'kode_desa'=> $this->input->post('kode_desa'),
-				'kode_wisata'=> $this->input->post('kode_wisata'),
-				'kode_sarana'=>$this->input->post('kode_sarana'),
-				'waktu_berita'=> $this->input->post('waktu_berita'),
+				'kode_berita' => htmlspecialchars($this->input->post('kode_berita')),
+				'kode_kecamatan'=> htmlspecialchars($this->input->post('kode_kecamatan')),
+				'kode_desa'=> htmlspecialchars($this->input->post('kode_desa')),
+				'kode_wisata'=> htmlspecialchars($this->input->post('kode_wisata')),
+				'kode_sarana'=>htmlspecialchars($this->input->post('kode_sarana')),
+				'waktu_berita'=> htmlspecialchars($this->input->post('waktu_berita')),
 				//'photo_berita'=> $this->input->post('photo_berita'),
-				'judul_berita'=> $this->input->post('judul_berita'),
-				'deskripsiberita1'=> $this->input->post('deskripsiberita1'),
-				'deskripsiberita2'=> $this->input->post('deskripsiberita2'),
-				'deskripsiberita3'=> $this->input->post('deskripsiberita3'),
-				'status_berita'=> $this->input->post('status_berita')
+				'judul_berita'=> htmlspecialchars($this->input->post('judul_berita')),
+				'deskripsiberita1'=> htmlspecialchars($this->input->post('deskripsiberita1')),
+				'deskripsiberita2'=> htmlspecialchars($this->input->post('deskripsiberita2')),
+				'deskripsiberita3'=> htmlspecialchars($this->input->post('deskripsiberita3')),
+				'status_berita'=> htmlspecialchars($this->input->post('status_berita'))
 			);
+
 			
 		if (!empty($_FILES['photo_berita']['name'])) 
 			{
@@ -1571,6 +1643,21 @@ class Admin extends CI_Controller {
 	{	
 		//ambil data by id
 		$data = $this->MA->getidpengajuan($id_pengajuan);
+
+		$a = $data['nama_pengajuan'];
+		$b = $data['deskripsi_pengajuan'];
+		$f = $data['alamat_pengajuan'];
+		$g = $data['kontak_pengajuan'];
+		$c = $a.'-'.$b.'-'.$f.'-'.$g;
+		$d = 'Data Pengajuan';
+
+		$save = [
+			'jenis_histori' => $d,
+			'isi_histori' => $c
+		];
+
+		$this->db->insert('tbl_histori_data',$save);
+
 		//hapus photo di folder
 		unlink(FCPATH.'/assets/admin/img/pengajuan/'.$data['photo_pengajuan']);
 		//hapus data di database
@@ -1616,7 +1703,7 @@ class Admin extends CI_Controller {
 		$email_api = urlencode("ikhlasul0507@gmail.com");
 		$passkey_api = urlencode("ABcd//12");
 		$no_hp_tujuan = urlencode($vid['kontak_pengajuan']);
-		$isi_pesan = urlencode("Terima Kasih Atas Pengajuan Yang ".$vid['nama_pengajuan']." Berikan ^-^. Informasi Anda Kami Tindak Lanjuti. Tertanda Admin Dinas Pariwisata Ogan Komering Ilir");
+		$isi_pesan = urlencode("Terima Kasih Atas Pengajuan ".$vid['nama_pengajuan']." Yang Berikan ^-^. Informasi Anda Kami Tindak Lanjuti. Tertanda Admin Dinas Pariwisata Ogan Komering Ilir");
 		$url = "https://reguler.medansms.co.id/sms_api.php?action=kirim_sms&email=".$email_api."&passkey=".$passkey_api."&no_tujuan=".$no_hp_tujuan."&pesan=".$isi_pesan;
 		// var_dump($url);
 		// die;
@@ -1688,13 +1775,14 @@ class Admin extends CI_Controller {
             'smtp_user' => 'beramal.com05@gmail.com',  // Email gmail
             'smtp_pass'   => 'beramal.com_05',  // Password gmail
             'smtp_crypto' => 'ssl',
-            'smtp_port'   => 587,
+            'smtp_port'   => 465,
             'crlf'    => "\r\n",
             'newline' => "\r\n"
         ];
 
+
         // Load library email dan konfigurasinya
-        $this->load->library('email', $config);
+       $this->email->initialize($config);
 
         // Email dan nama pengirim
         $this->email->from('no-reply@disparoki', 'disparoki.org');
@@ -1730,6 +1818,21 @@ class Admin extends CI_Controller {
     //hapus kontak
 	public function hapuskontak($id_kontak)
 	{	
+		$data = $this->db->get_where('tbl_kontak',['id_kontak' => $id_kontak])->row_array();
+
+		$a = $data['nama_kontak'];
+		$b = $data['email_kontak'];
+		$f = $data['pesan_kontak'];
+		$c = $a.'-'.$b.'-'.$f;
+		$d = 'Data Kontak';
+
+		$save = [
+			'jenis_histori' => $d,
+			'isi_histori' => $c
+		];
+
+		$this->db->insert('tbl_histori_data',$save);
+
      	$this->MA->hapuskon($id_kontak);
 		$data = $this->session->set_flashdata('pesan', 'Data Berhasil Di Hapus  !');
 		redirect('admin/namakon',$data);
@@ -1757,6 +1860,17 @@ class Admin extends CI_Controller {
 	{
 		//ambil data berdasrkan if
 		$row = $this->MA->getidinfo($id_info);
+
+		$a = 'Ubah Logo -'. date('h-m-Y');
+		$b = 'Data Ubah Logo';
+
+		$data = [
+			'jenis_histori' => $b,
+			'isi_histori' => $a
+		];
+
+		$this->db->insert('tbl_histori_data',$data);
+
 		$data = array(
 				//'logo' => $this->input->post('logo'),
 				'alamat' => $this->input->post('alamat'),
@@ -1805,6 +1919,16 @@ class Admin extends CI_Controller {
 				'email'=> $this->input->post('email')
 			);
 
+		$a = $this->input->post('alamat').'-'.date('h-m-Y');
+		$b = 'Data Ubah Alamat';
+
+		$save = [
+			'jenis_histori' => $b,
+			'isi_histori' => $a
+		];
+
+		$this->db->insert('tbl_histori_data',$save);
+
 		$this->MA->ubahinfo($id_info,$data);
 		
 		$data = $this->session->set_flashdata('pesan', 'Alamat Berhasil Di Ubah  !');
@@ -1820,6 +1944,17 @@ class Admin extends CI_Controller {
 				'email'=> $this->input->post('email')
 			);
 
+		$a = $this->input->post('handphone').'-'.date('h-m-Y');
+		$b = 'Data Ubah Handphone';
+
+		$save = [
+			'jenis_histori' => $b,
+			'isi_histori' => $a
+		];
+
+		$this->db->insert('tbl_histori_data',$save);
+
+
 		$this->MA->ubahinfo($id_info,$data);
 		
 		$data = $this->session->set_flashdata('pesan', 'Handphone Berhasil Di Ubah  !');
@@ -1834,6 +1969,17 @@ class Admin extends CI_Controller {
 				'handphone'=> $this->input->post('handphone'),
 				'email'=> $this->input->post('email')
 			);
+
+		$a = $this->input->post('email').'-'.date('h-m-Y');
+		$b = 'Data Ubah Email';
+
+		$save = [
+			'jenis_histori' => $b,
+			'isi_histori' => $a
+		];
+
+		$this->db->insert('tbl_histori_data',$save);
+
 
 		$this->MA->ubahinfo($id_info,$data);
 		
@@ -1863,6 +2009,19 @@ class Admin extends CI_Controller {
 	{	
 		//ambil data by id
 		$data = $this->MA->getidaspirasi($id_aspirasi);
+
+		$a = $data['judul_aspirasi'];
+		$b = $data['photo_aspirasi'];
+		$f = $data['aspirasi'];
+		$c = $a.'-'.$b.'-'.$f;
+		$d = 'Data Aspirasi';
+
+		$save = [
+			'jenis_histori' => $d,
+			'isi_histori' => $c
+		];
+
+		$this->db->insert('tbl_histori_data',$save);
 		//hapus photo di folder
 		unlink(FCPATH.'/assets/users/gambar/'.$data['photo_aspirasi']);
 		//hapus data di database
@@ -1915,6 +2074,20 @@ class Admin extends CI_Controller {
 	}
 	public function hapusagenda($id_agenda)
 	{	
+		$agenda = $this->db->get_where('tbl_agenda',['id_agenda'=>$id_agenda])->row_array();
+
+
+		$a = $agenda['nama_agenda'];
+		$b = $agenda['waktu_agenda'];
+		$c = $a.'-'.$b;
+		$d = 'Agenda Kegiatan';
+
+		$data = [
+			'jenis_histori' => $d,
+			'isi_histori' => $c
+		];
+
+		$this->db->insert('tbl_histori_data',$data);
 		//hapus data di database
      	$this->MA->hapusagd($id_agenda);
 		$data = $this->session->set_flashdata('pesan', 'Agenda Berhasil Di Hapus  !');
@@ -1992,8 +2165,21 @@ class Admin extends CI_Controller {
 	//hapus PENGAJUAN
 	public function hapuspeng($id)
 	{	
+
 		//ambil data by id
 		$data = $this->MA->getidpeng($id);
+
+		$a = $data['nama_penghargaan'];
+		$b = $data['photo_penghargaan'];
+		$c = $a.'-'.$b;
+		$d = 'Penghargaan';
+
+		$save = [
+			'jenis_histori' => $d,
+			'isi_histori' => $c
+		];
+
+		$this->db->insert('tbl_histori_data',$save);
 		//hapus photo di folder
 		unlink(FCPATH.'/assets/admin/img/penghargaan/'.$data['photo_penghargaan']);
 		//hapus data di database
@@ -2167,11 +2353,27 @@ class Admin extends CI_Controller {
 	public function hapusakun($id)
 	{	
 		$data['user'] = $this->db->get_where('tbl_user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['admin'] = $this->db->get_where('tbl_user', ['role_id' => 1])->row_array();
+
+		$role_admin = $data['admin']['role_id'];
 
 		$id_akun = $data['user']['id'];
 		//ambil data by id
 		$data = $this->MA->getidprofil($id);
 
+
+		$a = $data['nama'];
+		$b = $data['email'];
+		$f = $data['photo'];
+		$c = $a.'-'.$b.'-'.$f;
+		$d = 'Data Akun';
+
+		$save = [
+			'jenis_histori' => $d,
+			'isi_histori' => $c
+		];
+
+		$this->db->insert('tbl_histori_data',$save);
 		if($id == $id_akun){
 			$data = $this->session->set_flashdata('pesan', 'Akun Tidak Dapat Di Hapus  !');
 			redirect('admin/aksesakun',$data);
@@ -2208,7 +2410,12 @@ class Admin extends CI_Controller {
 		$id_akun = $data['user']['id'];
 
 		$vid = $this->MA->getidakun($id);
+		$akses = $vid['role_id'];
 		//ambil data
+		if($akses==1){
+			$data = $this->session->set_flashdata('pesan', 'Akun Tidak Dapat Di Non Aktifkan  !');
+			redirect('admin/aksesakun',$data);
+		}else{
 		if($id == $id_akun){
 			$data = $this->session->set_flashdata('pesan', 'Akun Tidak Dapat Di Non Aktifkan  !');
 			redirect('admin/aksesakun',$data);
@@ -2228,6 +2435,7 @@ class Admin extends CI_Controller {
 		$data = $this->session->set_flashdata('pesan', 'Akun Non Aktif  !');
 		redirect('admin/aksesakun',$data);
 		}
+	}
 	}
 	public function akseson($id)
 	{
@@ -2252,10 +2460,21 @@ class Admin extends CI_Controller {
 	{
 		$vid = $this->MA->getidpeta($id);
 		//ambil data
+		$a = 'Peta Aktif';
+		$b = 'Data Peta Aktif';
+
+		$data = [
+			'jenis_histori' => $b,
+			'isi_histori' => $a
+		];
+
+		$this->db->insert('tbl_histori_data',$data);
+
 		$data = array(
 				'is_active' => 1,
 				'zoom'=> $vid['zoom'],
 			);
+
 		$this->db->where('id',$id);
 		$this->db->update('tbl_peta',$data);
 		//jika berhasil
@@ -2265,6 +2484,18 @@ class Admin extends CI_Controller {
 	public function petaoff($id)
 	{
 		$vid = $this->MA->getidpeta($id);
+
+		$a = 'Peta Tidak Aktif';
+		$b = 'Data Peta Tida Aktif';
+
+		$data = [
+			'jenis_histori' => $b,
+			'isi_histori' => $a
+		];
+
+		$this->db->insert('tbl_histori_data',$data);
+
+
 		//ambil data
 		$data = array(
 				'is_active' => 0,

@@ -4,9 +4,9 @@
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
                         <h2>PROFIL</h2>
-                        <h2>DINAS PARIWISATA DAN KEBUDAYAAN<BR>KABUPATEN OGAN KOMERING ILIR</h2>
+                        <h2>DINAS KEBUDAYAAN DAN PARIWISATA<BR>KABUPATEN OGAN KOMERING ILIR</h2>
                         <?php foreach ($data_info as $di):?>
-                            <img class="card-img rounded-0" style="width: 100%; height: 150px" src="<?= base_url('assets/users/');?>gambar/<?= $di['logo'];?>" alt="">
+                            <img class="card-img rounded-0" style="width: 400px; height: 150px" src="<?= base_url('assets/users/');?>gambar/<?= $di['logo'];?>" alt="">
                         <?php endforeach; ?>
                     </div>
                 </div>

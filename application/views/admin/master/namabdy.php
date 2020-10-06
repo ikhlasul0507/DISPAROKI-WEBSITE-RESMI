@@ -120,9 +120,7 @@
                     </a>
                     <br>
                     <br>
-                    <a href="<?= base_url('admin/QRcode/'.$ws->link_video);?>" target="blank">
-                      <img src="<?= base_url('admin/QRcode/'.$ws->link_video);?>">
-                    </a>
+                    
                   </td>
                   <td align="center">
                     <a class="btn btn-success" href="<?= $ws->link_google;?>" target="blank">
@@ -130,9 +128,10 @@
                     </a>
                     <br>
                     <br>
-                    <a href="<?= base_url('admin/QRcode/'.$ws->link_google);?>" target="blank">
-                      <img src="<?= base_url('admin/QRcode/'.$ws->link_google);?>">
-                    </a>
+                    <a href="<?= base_url('home/Qrcodebud/'.$ws->id_master_budaya);?>" target="blank">
+                        <!-- <img src="<?= base_url('tes.png');?>" style="width: 200px;height: 200px"> -->
+                        <button class="btn btn-primary">SCAN QR PETA</button>
+                        </a>
                   </td>
                   <td><?= $ws->latitude;?></td>
                   <td><?= $ws->longtitude;?></td>
@@ -250,7 +249,14 @@
                                   <select class="form-control select2" style="width: 100%;" name="kode_budaya" required oninvalid="this.setCustomValidity('Data Harus Dipilih !')" oninput="setCustomValidity('')">
                                     <option selected disabled="disabled" value="">--Jenis Budaya--</option>
                                     <?php foreach ($data_bud as $k):?>
-                                    <option value="<?= $k['kode_budaya'];?>"><?= $k['nama_budaya'];?></option>
+                                    <?php 
+                                     if ($ws->kode_budaya==$k['kode_budaya']) {
+                                         $select="selected";
+                                        }else{
+                                         $select="";
+                                        }
+                                        echo "<option $select value =".$k['kode_budaya'].">".$k['nama_budaya']."</option>";
+                                     ?>
                                     <?php endforeach; ?>
                                   </select>
                                   </div>
@@ -263,7 +269,15 @@
                                   <select class="form-control select2" id="kecamatan" style="width: 100%;" name="kode_kecamatan" required oninvalid="this.setCustomValidity('Data Harus Dipilih !')" oninput="setCustomValidity('')">
                                     <option selected disabled="disabled" value="">--Nama Kecamatan--</option>
                                     <?php foreach ($data_kec as $kec):?>
-                                    <option value="<?= $kec['kode_kecamatan'];?>"><?= $kec['nama_kecamatan'];?></option>
+                                    <?php 
+                                     if ($ws->kode_kecamatan==$kec['kode_kecamatan']) {
+                                         $select="selected";
+                                        }else{
+                                         $select="";
+                                        }
+                                        echo "<option $select value =".$kec['kode_kecamatan'].">".$kec['nama_kecamatan']."</option>";
+                                     ?>
+
                                     <?php endforeach; ?>
                                   </select>
                                   </div>
@@ -274,7 +288,16 @@
                                   <select class="form-control select2" id="desa" style="width: 100%;" name="kode_desa" required oninvalid="this.setCustomValidity('Data Harus Dipilih !')" oninput="setCustomValidity('')">
                                     <option selected disabled="disabled" value="">--Nama Desa--</option>
                                     <?php foreach ($data_joinkecdes as $jkd):?>
-                                    <option value="<?= $jkd->kode_desa;?>"><?= $jkd->nama_desa;?></option>
+
+                                     <?php 
+                                     if ($ws->kode_desa==$jkd->kode_desa) {
+                                         $select="selected";
+                                        }else{
+                                         $select="";
+                                        }
+                                        echo "<option $select value =".$jkd->kode_desa.">".$jkd->nama_desa."</option>";
+                                     ?>
+
                                     <?php endforeach; ?>
                                   </select>
                                 </div>  

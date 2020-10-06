@@ -99,6 +99,7 @@
                    <!-- Profile Image -->
                       <div class="box box-primary">
                         <div class="box-body box-profile">
+                          <div class="table-responsive">
                           <table id="example2" class="table table-striped table-bordered data table-responsive"  style="width:100%">
                             <thead>
                             <tr>
@@ -165,7 +166,15 @@
                               </td>
                               <td><?= $da['date_created'] ?></td>
                               <td> 
-                                <a class="btn btn-social-icon btn-google" style="margin-right: 5px"  title='Hapus' data-toggle="modal" data-target="#modal-danger<?= $da['id']; ?>"><i class="fa fa-trash"></i></a></td>
+                               <?php 
+                           
+
+                                if($da['role_id'] != 1){?>
+                                <a class="btn btn-social-icon btn-google" style="margin-right: 5px"  title='Hapus' data-toggle="modal" data-target="#modal-danger<?= $da['id']; ?>"><i class="fa fa-trash"></i></a>
+                                <?php }else{ ?>
+                                  <button class="btn btn-danger disabled">Full Akses</button>
+                                <?php } ?>
+                              </td>
                             </tr>
                            <?php endforeach; ?>
                             </tbody>
@@ -183,7 +192,7 @@
                             </tr>
                             </tfoot>
                           </table>
-
+                        </div>
                         </div>
                         <!-- /.box-body -->
                       </div>
@@ -198,6 +207,7 @@
                  
                    <div class="box box-primary">
                         <div class="box-body box-profile">
+                          <div class="table-responsive">
                            <table id="example2" class="table table-striped table-bordered data table-responsive"  style="width:100%">
                             <thead>
                             <tr>
@@ -230,6 +240,7 @@
                             </tr>
                             </tfoot>
                           </table>
+                        </div>
                           </div>
                     </div>
                         <!-- /.box-body -->
@@ -245,6 +256,7 @@
                  
                    <div class="box box-primary">
                         <div class="box-body box-profile">
+                          <div class="table-responsive">
                            <table id="exampleh" class="table table-striped table-bordered data table-responsive"  style="width:100%">
                             <thead>
                             <tr>
@@ -286,6 +298,7 @@
                             </tr>
                             </tfoot>
                           </table>
+                        </div>
                           </div>
                     </div>
                         <!-- /.box-body -->
@@ -299,6 +312,7 @@
                  
                    <div class="box box-primary">
                         <div class="box-body box-profile">
+                          <div class="table-responsive">
                            <table id="examplet" class="table table-striped table-bordered data table-responsive"  style="width:100%">
                             <thead>
                             <tr>
@@ -334,6 +348,7 @@
                             </tr>
                             </tfoot>
                           </table>
+                        </div>
                           </div>
                     </div>
                         <!-- /.box-body -->

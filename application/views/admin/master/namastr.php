@@ -26,6 +26,7 @@
               </div>
             </div>
             <div class="box-body" id="printkec">
+              <div class="table-responsive">
               <table id="example2" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -60,6 +61,7 @@
                 </tfoot>
               </table>
             </div>
+            </div>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
@@ -92,7 +94,15 @@
                               <select class="form-control select2" style="width: 100%;" name="kode_jabatan" required oninvalid="this.setCustomValidity('Data Harus Dipilih !')" oninput="setCustomValidity('')">
                                 <option selected disabled="disabled" value="">--Kode Jabatan--</option>
                                 <?php foreach ($data_jab as $k):?>
-                                <option value="<?= $k['kode_jabatan'];?>"><?= $k['nama_jabatan'];?></option>
+
+                                    <?php 
+                                     if ($st->kode_jabatan==$k['kode_jabatan']) {
+                                         $select="selected";
+                                        }else{
+                                         $select="";
+                                        }
+                                        echo "<option $select value =".$k['kode_jabatan'].">".$k['nama_jabatan']."</option>";
+                                     ?>
                                 <?php endforeach; ?>
                               </select>
                             </div>

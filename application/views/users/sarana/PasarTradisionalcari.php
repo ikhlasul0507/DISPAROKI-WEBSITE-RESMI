@@ -98,6 +98,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
+                    <div class="row">
                     <?php if ($data_srnp){?>
                     <?php foreach ($data_srnp as $dm):?>
                      <div class="col-lg-6 col-md-6">
@@ -136,6 +137,7 @@
                                     <h1 class="blink">Data Tidak Ditemukan !</h1><hr>
                                     </center>
                                 <?php } ?>
+                        </div>
                        <div class="row">
                         <div class="col-lg-12">
                             <div class="more_place_btn text-center">

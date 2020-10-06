@@ -68,8 +68,9 @@
                                  </ul>
                             </div>
                         </div>
-                        <a href="<?= base_url('home/QRcode/'.$ds->link_google);?>" target="blank">
-                        <img src="<?= base_url('home/QRcode/'.$ds->link_google);?>">
+                        <a href="<?= base_url('home/Qrcodebud/'.$ds->id_master_budaya);?>" target="blank">
+                        <!-- <img src="<?= base_url('tes.png');?>" style="width: 200px;height: 200px"> -->
+                        <button class="btn btn-primary mt-4">SCAN QR PETA</button>
                         </a>
                         <p class="comment-count"><span class="align-middle btn" onclick="window.print();"><i class="fa fa-print" ></i>Print</span></p>
                         </li>

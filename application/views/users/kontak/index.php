@@ -51,7 +51,7 @@
     
                 <div class="row" style="background: linear-gradient(#00BFFF,   #87CEFA);">
                     <div class="col-12">
-                        <h2 class="contact-title">Kontak</h2>
+                        <h2 class="contact-title">Pengaduan</h2>
                     </div>
                     <div class="col-lg-8">
                         <form action="<?= base_url();?>Kontak/tambahknt" method="post">

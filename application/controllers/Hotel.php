@@ -59,7 +59,7 @@ class Hotel extends CI_Controller {
 		$data['data_kec']= $this->Model_user->listkec();
 		$this->load->view('users/temp/header',$data);
 		$this->load->view('users/temp/head',$data);
-		$this->load->view('users/sarana/hotelcari',$data);
+		$this->load->view('users/sarana/Hotelcari',$data);
 		$this->load->view('users/temp/foot',$data);
 		$this->load->view('users/temp/footer');
 	}

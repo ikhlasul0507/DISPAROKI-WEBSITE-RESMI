@@ -203,7 +203,15 @@
                                   <select class="form-control select2" style="width: 100%;" name="kode_wisata" required oninvalid="this.setCustomValidity('Data Harus Dipilih !')" oninput="setCustomValidity('')">
                                     <option selected disabled="disabled" value="">--Jenis Wisata--</option>
                                     <?php foreach ($data_wis as $k):?>
-                                    <option value="<?= $k['kode_wisata'];?>"><?= $k['nama_wisata'];?></option>
+                                    
+                                    <?php 
+                                     if ($br->kode_wisata==$k['kode_wisata']) {
+                                         $select="selected";
+                                        }else{
+                                         $select="";
+                                        }
+                                        echo "<option $select value =".$k['kode_wisata'].">".$k['nama_wisata']."</option>";
+                                     ?>
                                     <?php endforeach; ?>
                                   </select>
                                   </div>
@@ -214,7 +222,15 @@
                                   <select class="form-control select2" style="width: 100%;" name="kode_sarana" required oninvalid="this.setCustomValidity('Data Harus Dipilih !')" oninput="setCustomValidity('')">
                                     <option selected disabled="disabled" value="">--Jenis Sarana--</option>
                                     <?php foreach ($data_sar as $k):?>
-                                    <option value="<?= $k['kode_sarana'];?>"><?= $k['nama_sarana'];?></option>
+                                   
+                                     <?php 
+                                     if ($br->kode_sarana==$k['kode_sarana']) {
+                                         $select="selected";
+                                        }else{
+                                         $select="";
+                                        }
+                                        echo "<option $select value =".$k['kode_sarana'].">".$k['nama_sarana']."</option>";
+                                     ?>
                                     <?php endforeach; ?>
                                   </select>
                                   </div>
@@ -226,8 +242,16 @@
                                  <span class="input-group-addon"><i class="fa fa-file-text-o"></i></span>
                                   <select class="form-control select2" id="" style="width: 100%;" name="kode_kecamatan" required oninvalid="this.setCustomValidity('Data Harus Dipilih !')" oninput="setCustomValidity('')">
                                     <option selected disabled="disabled" value="">--Nama Kecamatan--</option>
-                                    <?php foreach ($data_kec as $kec):?>
-                                    <option value="<?= $kec['kode_kecamatan'];?>"><?= $kec['nama_kecamatan'];?></option>
+                                    <?php foreach ($data_kec as $kkk):?>
+                                   
+                                    <?php 
+                                     if ($br->kode_kecamatan==$kkk['kode_kecamatan']) {
+                                         $select="selected";
+                                        }else{
+                                         $select="";
+                                        }
+                                        echo "<option $select value =".$kkk['kode_kecamatan'].">".$kkk['nama_kecamatan']."</option>";
+                                     ?>
                                     <?php endforeach; ?>
                                   </select>
                                   </div>
@@ -238,7 +262,15 @@
                                   <select class="form-control select2" id="" style="width: 100%;" name="kode_desa" required oninvalid="this.setCustomValidity('Data Harus Dipilih !')" oninput="setCustomValidity('')">
                                     <option selected disabled="disabled" value="">--Nama Desa--</option>
                                     <?php foreach ($data_joinkecdes as $jkd):?>
-                                    <option value="<?= $jkd->kode_desa;?>"><?= $jkd->nama_desa;?></option>
+                                    
+                                    <?php 
+                                     if ($br->kode_desa==$jkd->kode_desa) {
+                                         $select="selected";
+                                        }else{
+                                         $select="";
+                                        }
+                                        echo "<option $select value =".$jkd->kode_desa.">".$jkd->nama_desa."</option>";
+                                     ?>
                                     <?php endforeach; ?>
                                   </select>
                                 </div>  
@@ -261,17 +293,17 @@
                             <br>
                             <div class="input-group">
                               <span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                               <textarea placeholder="Deskripsi Berita" style="width: 100%; height: 80px; font-size: 14px;padding: 10px;color: black" name="deskripsiberita1"  required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus><?= $br->deskripsiberita1;?>"</textarea>
+                               <textarea placeholder="Deskripsi Berita" style="width: 100%; height: 80px; font-size: 14px;padding: 10px;color: black" name="deskripsiberita1"  required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus><?= $br->deskripsiberita1;?></textarea>
                             </div>
                             <br>
                             <div class="input-group">
                               <span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                               <textarea placeholder="Deskripsi Berita" style="width: 100%; height: 80px; font-size: 14px;padding: 10px;color: black" name="deskripsiberita2" required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus><?= $br->deskripsiberita2;?>"</textarea>
+                               <textarea placeholder="Deskripsi Berita" style="width: 100%; height: 80px; font-size: 14px;padding: 10px;color: black" name="deskripsiberita2" required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus><?= $br->deskripsiberita2;?></textarea>
                             </div>
                             <br>
                             <div class="input-group">
                               <span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                               <textarea placeholder="Deskripsi Berita" style="width: 100%; height: 80px; font-size: 14px;padding: 10px;color: black" name="deskripsiberita3" required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus><?= $br->deskripsiberita3;?>"</textarea>
+                               <textarea placeholder="Deskripsi Berita" style="width: 100%; height: 80px; font-size: 14px;padding: 10px;color: black" name="deskripsiberita3" required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus><?= $br->deskripsiberita3;?></textarea>
                             </div>
                             <br>  
                                
@@ -362,7 +394,7 @@
                             <div class="tab-pane active" id="tab_1">
                               <div class="input-group">
                               <span class="input-group-addon"><i class="fa fa-font"></i></span>   
-                              <input type="text" class="form-control" onkeyup="this.value = this.value.toUpperCase()" placeholder="Kode Berita" name="kode_berita" required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus>
+                              <input type="text" class="form-control" value="" name="kode_berita" required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus>
                             </div>
                             <br>
                               <div class="row">

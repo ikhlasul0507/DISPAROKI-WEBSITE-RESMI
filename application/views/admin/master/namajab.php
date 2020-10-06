@@ -26,6 +26,7 @@
               </div>
             </div>
             <div class="box-body" id="printkec">
+              <div class="table-responsive">
               <table id="example2" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -56,6 +57,7 @@
                 </tr>
                 </tfoot>
               </table>
+            </div>
             </div>
             <!-- /.box-body -->
           </div>

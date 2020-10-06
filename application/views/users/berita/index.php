@@ -8,7 +8,9 @@
                 <div class="col-lg-8 mb-2 mb-lg-0">
                     <div class="blog_left_sidebar">
                       
+                                <?php if ($data_brtg){?>
                                  <?php foreach ($data_brtgp as $br):?>
+                                  
                                    <article class="blog_item">
                                         <div class="blog_item_img">
                                             <img class="card-img rounded-0" src="<?= base_url();?>assets/admin/img/berita/<?= $br['photo_berita'];?>" alt="">
@@ -33,7 +35,17 @@
                                             </ul>
                                         </div>
                                     </article>
+                                    
+                                       
                                 <?php endforeach; ?>
+
+                                <?php }else{ ?>
+                                    <center>
+                                        <br><br><br><br><br><hr>
+                                        <h2>Ops...</h2><br>
+                                    <h1 class="blink">Tidak Ada Berita !</h1><hr>
+                                    </center>
+                                <?php } ?>
                        
                         <nav class="blog-pagination justify-content-center d-flex">
                             <?= $this->pagination->create_links(); ?>

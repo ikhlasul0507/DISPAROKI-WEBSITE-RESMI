@@ -23,15 +23,18 @@ class Kontak extends CI_Controller {
 	}
 	public function tambahknt()
 	{
+		
+		$waktu= date("d-m-Y h:i:s");
 		$data = array(
 			'nama_kontak' => $this->input->post('nama_kontak'),
 			'email_kontak' => $this->input->post('email_kontak'),
 			'judul_kontak' => $this->input->post('judul_kontak'),
-			'pesan_kontak' => $this->input->post('pesan_kontak')
+			'pesan_kontak' => $this->input->post('pesan_kontak'),
+			'waktu'=> $waktu
 			);
-
 		$this->Model_user->tambahknt($data);
 		$data = $this->session->set_flashdata('pesan', 'Data Berhasil Di Tambah  !');
 		redirect('Kontak',$data);
 	}
+	
 }

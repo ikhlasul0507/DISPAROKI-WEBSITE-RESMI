@@ -20,6 +20,7 @@
                   <th>Email</th>
                   <th>Judul</th>
                   <th>Pesan</th>
+                  <th>Waktu</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -30,6 +31,7 @@
                   <td><?= $ko['email_kontak'];?></td>
                   <td><?= $ko['judul_kontak'];?></td>
                   <td><?= $ko['pesan_kontak'];?></td>
+                  <td><?= $ko['waktu'];?></td>
                 </tr>
                <?php endforeach; ?>
                 </tbody>
@@ -40,6 +42,7 @@
                   <th>Email</th>
                   <th>Judul</th>
                   <th>Pesan</th>
+                  <th>Waktu</th>
                 </tr>
                 </tfoot>
               </table>

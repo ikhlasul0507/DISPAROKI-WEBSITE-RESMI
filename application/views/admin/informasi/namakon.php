@@ -35,6 +35,7 @@
                   <th>Email</th>
                   <th>Judul</th>
                   <th>Pesan</th>
+                  <th>Waktu</th>
                   <th>Aksi</th>
                 </tr>
                 </thead>
@@ -46,6 +47,7 @@
                   <td><?= $ko['email_kontak'];?></td>
                   <td><?= $ko['judul_kontak'];?></td>
                   <td><?= $ko['pesan_kontak'];?></td>
+                  <td><?= $ko['waktu'];?></td>
                   <td>
                       <a class="btn btn-social-icon btn-success" href="<?= base_url();?>admin/kirimemail/<?= $ko['id_kontak'];?>" title='Kirim Email Respon'><i class="fa fa-envelope-o"></i></a>
                       <a class="btn btn-social-icon btn-google" style="margin-right: 5px"  title='Hapus' data-toggle="modal" data-target="#modal-danger<?php echo $ko['id_kontak'];?>"><i class="fa fa-trash"></i></a></td>   
@@ -59,6 +61,7 @@
                   <th>Email</th>
                   <th>Judul</th>
                   <th>Pesan</th>
+                  <th>Waktu</th>
                   <th>Aksi</th>
                 </tr>
                 </tfoot>

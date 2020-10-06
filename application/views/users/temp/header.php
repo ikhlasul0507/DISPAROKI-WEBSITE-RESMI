@@ -17,7 +17,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-7 col-lg-6">
+                            <div class="col-xl-8 col-lg-5">
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
@@ -47,13 +47,13 @@
                                             </li>
                                             <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-apOCTu0m6DNT3G1w5bFq">Berita</a></li>
                                             <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-8Z6iygjfhfgBvQFWt1OQ">Galeri</a></li>
-                                            <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-iwAuR0baOjR4tc2t9wfh">Kontak</a></li>
+                                            <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-iwAuR0baOjR4tc2t9wfh">Pengaduan</a></li>
                                             
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+                            <div class="col-xl-2 col-lg-4 d-none d-lg-block">
                                 <div class="social_wrap d-flex align-items-center justify-content-end">
                                     <div class="social_links d-none d-xl-block">
                                         <ul>

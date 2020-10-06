@@ -5,7 +5,7 @@ class Model_admin extends CI_model{
 	//DATA KECAMATAN
 	public function listkec()
 	{
-		$this->db->order_by('kode_kecamatan', 'ASC');
+		// $this->db->order_by('kode_kecamatan', 'ASC');
 		return $this->db->get('tbl_kecamatan')->result_array();	
 	}
 	public function tambahkec($data)
@@ -540,5 +540,6 @@ class Model_admin extends CI_model{
 	{
 		return $this->db->get_where('tbl_peta',['id'=>  $id])->row_array();
 	}
+	
 
 }

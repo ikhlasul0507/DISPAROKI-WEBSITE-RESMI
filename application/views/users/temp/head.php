@@ -8,6 +8,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta property="og:title" content="Selamat Datang" />
+    <meta property="og:description" content="Dinas Kebudayaan Dan Pariwisata Kabupaten Ogan Komering Ilir" />
+    
+    <meta content='<?= base_url('assets/users/');?>gambar/logo.png' property='og:image'/>
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="icon"  type="image/png" href='<?= base_url('assets/users/');?>gambar/logo.png'>
     

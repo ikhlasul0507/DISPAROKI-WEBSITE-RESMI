@@ -26,7 +26,8 @@
               </div>
             </div>
             <div class="box-body" id="printkec">
-              <table id="example2" class="table table-bordered table-striped">
+              <div class="table-responsive">
+              <table id="example2" class="table table-bordered table-striped table-responsive">
                 <thead>
                 <tr>
                   <th>ID</th>
@@ -61,6 +62,7 @@
                 </tfoot>
               </table>
             </div>
+            </div>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
@@ -90,7 +92,7 @@
                             <div class="input-group">
                               <span class="input-group-addon"><i class="fa fa-paragraph"></i></span>
                               <input type="hidden" name="id_desa" value="<?= $d->id_desa;?>">
-                              <input type="text" class="form-control" placeholder="Kode Desa" id="kode_kecamatan" name="kode_desa" required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" readonly autofocus value=" <?= $d->kode_desa;?> ">
+                              <input type="text" class="form-control" placeholder="Kode Desa" id="kode_kecamatan" name="kode_desa" required oninvalid="this.setCustomValidity('Data Harus Diisi Dan Tidak Boleh Sama !')" oninput="setCustomValidity('')" autocomplete="off" autofocus value=" <?= $d->kode_desa;?> ">
                             </div>
                             <br>
                             <div class="input-group">

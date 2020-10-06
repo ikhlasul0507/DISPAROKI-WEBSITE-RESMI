@@ -146,6 +146,14 @@ class Auth extends CI_Controller {
 			redirect('auth',$data);
 		}
 	}
+
+    public function hitung()
+    {
+        
+        $waktu= date("d-m-Y h:i:s");
+
+        echo $waktu;
+    }
 	private function _sendEmail($token, $type)
 	{
 		 $config = [
@@ -192,7 +200,7 @@ class Auth extends CI_Controller {
         if($user){
         	$user_token = $this->db->get_where('tbl_user_token',['token'])->row_array();
         	if($user_token){
-        		if(time()-$user_token['date_created']<(60 * 60 * 24)){
+        		if(time()- $user_token['date_created']<(60 * 60 * 24)){
         			//update tabel
         			$this->db->set('is_active', 1);
                     $this->db->where('email', $email);
