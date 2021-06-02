@@ -1,8 +1,8 @@
   
     <!--================Blog Area =================-->
-    <section class="blog_area section-padding" style="background: linear-gradient(#00BFFF,   #87CEFA);">
+    <section class="blog_area section-padding" style="background: linear-gradient(#ff4d21,   #edff21);">
          <h2 class="text-center">Berita Dan Kegiatan</h2>
-     <h2 class="text-center">Dinas Pariwisata dan Kebudayaan</h2>
+     <h2 class="text-center">Dinas Pariwisata dan Kebudayaan Kota Pagaralam</h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mb-2 mb-lg-0">
@@ -30,7 +30,7 @@
                                                 echo $sub_kalimat.'.....';
                                              ?></p>
                                             <ul class="blog-info-link">
-                                                <li><a style="color: white"  href="<?= base_url();?>br1<?= $br['id_berita'];?>5t/detail-pengumuman-KhmmqOdAo8ke86DOVcla"><i class="fa fa-user" style="color: white"></i> Admin, Disparoki</a></li>
+                                                <li><a style="color: white"  href="<?= base_url();?>br1<?= $br['id_berita'];?>5t/detail-pengumuman-KhmmqOdAo8ke86DOVcla"><i class="fa fa-user" style="color: white"></i> Admin, Dispar</a></li>
                                                 <li><a style="color: white" href="<?= base_url();?>br1<?= $br['id_berita'];?>5t/detail-pengumuman-KhmmqOdAo8ke86DOVcla"><i class="fa fa-comments" style="color: white"></i> <?= $br['kode_berita'];?></a></li>
                                             </ul>
                                         </div>

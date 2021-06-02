@@ -8,7 +8,7 @@
     //setting map koordinat awal
     //level zoom pada map
     <?php $a= $peta['zoom']; ?>
-    var mymap = L.map('mapid').setView([-3.3848781, 104.8191939], <?= $a;?>);
+    var mymap = L.map('mapid').setView([-4.03756, 103.1992472], <?= $a;?>);
     
     //setting token
     ACCESS_TOKEN = 'pk.eyJ1IjoiaWtobGFzdWwwNTA3IiwiYSI6ImNrOTY3cDJkNTBoeWYzcGwyeXhzMWR6c2wifQ.c3kroaKoyobXOSngsVKOTw';
@@ -81,8 +81,8 @@
     <?php } ?>
     //popup saat pertama kali di jalankan pada map
     //setting marker dan popup
-    L.marker([-3.3920611,104.8300743],{icon:iconlogo}).addTo(mymap)
-    .bindPopup("<center><img src='<?= base_url();?>assets/users/gambar/logo.png' width='200px' height='150px'><br><h4>Dinas Kebudayaan Dan Pariwisata</h4><br>Kabupaten Ogan Komering Ilir")
+    L.marker([-4.03756, 103.1992472],{icon:iconlogo}).addTo(mymap)
+    .bindPopup("<center><img src='<?= base_url();?>assets/users/gambar/logo.png' width='200px' height='150px'><br><h4>Dinas Kebudayaan Dan Pariwisata</h4><br>Kota Pagaralam")
     .openPopup();
 
     //popup ambil koordinat ketika peta diklik
@@ -178,7 +178,7 @@
 <br>
    <br>
 
-    <div class="travel_variation_area" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
+    <div class="travel_variation_area" style="background: linear-gradient(#ff4d21,   #edff21); ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
@@ -216,13 +216,13 @@
     </div><br>
 <!-- video finish -->
     <!-- popular_destination_area_start  -->
-    <div class="popular_destination_area" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
+    <div class="popular_destination_area" style="background: linear-gradient(#ff4d21,   #edff21); ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb_70">
                         <h3 style="color: white">Budaya Populer</h3>
-                        <p style="color: white">Destinasi Budaya Di Kabupaten Ogan Komering Ilir Provinsi Sumatera Selatan</p>
+                        <p style="color: white">Destinasi Budaya Di Kota Pagaralam Provinsi Sumatera Selatan</p>
                     </div>
                 </div>
             </div>
@@ -254,13 +254,13 @@
 <br>
 
     <!-- popular_destination_area_start  -->
-    <div class="popular_destination_area" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
+    <div class="popular_destination_area" style="background: linear-gradient(#ff4d21,   #edff21); ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb_70">
                         <h3 style="color: white">Destinasi Populer</h3>
-                        <p style="color: white">Destinasi Wisata Di Kabupaten Ogan Komering Ilir Provinsi Sumatera Selatan</p>
+                        <p style="color: white">Destinasi Wisata Di Kota Pagaralam Provinsi Sumatera Selatan</p>
                     </div>
                 </div>
             </div>
@@ -287,14 +287,14 @@
     </div>
     <!-- popular_destination_area_end  -->
     
-    <div class="recent_trip_area" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
+    <div class="recent_trip_area" style="background: linear-gradient(#ff4d21,   #edff21); ">
         
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                      <div class="section_title text-center mb_70">
                         <h3 style="color: white">Sarana Populer</h3>
-                        <p style="color: white">Sarana Wisata Di Kabupaten Ogan Komering Ilir Provinsi Sumatera Selatan</p>
+                        <p style="color: white">Sarana Wisata Di Kota Pagaralam Provinsi Sumatera Selatan</p>
                     </div>
                 </div>
             </div>
@@ -339,7 +339,7 @@
                         <div class="col-lg-5">
                             <div class="newsletter_text">
                                 <h4>Pengajuan Wisata</h4>
-                                <p>Tau Tempat Wisata Atau Kuliner Di Kabupaten Ogan Komering Ilir, Yook Rekomendasikan DiKolom Disamping ...</p>
+                                <p>Tau Tempat Wisata Atau Kuliner Di Kota Pagaralam, Yook Rekomendasikan DiKolom Disamping ...</p>
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -361,13 +361,13 @@
     </div>
     <!-- newletter_area_end  -->
 
-    <div class="popular_places_area" style="background: linear-gradient(#00BFFF,   #87CEFA);">
+    <div class="popular_places_area" style="background: linear-gradient(#ff4d21,   #edff21);">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb_70">
                         <h3 style="color: white">Berita Dan Kegiatan</h3>
-                        <p style="color: white">Artikel Berita dan Kegiatan Dinas Pariwisata Ogan Komering Ilir</p>
+                        <p style="color: white">Artikel Berita dan Kegiatan Dinas Pariwisata Kota Pagaralam</p>
                     </div>
                 </div>
             </div>
@@ -419,7 +419,7 @@
 
 
     <!-- testimonial_area  -->
-    <div class="testimonial_area" style="background-color: #199fff">
+    <div class="testimonial_area" style="background: linear-gradient(#ff4d21,   #edff21);">
         <div class="container">
             <div class="row">
                
@@ -483,7 +483,7 @@
      <!-- Modal -->
   <div class="modal fade custom_search_pop" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
+      <div class="modal-content" style="background: linear-gradient(#ff4d21,   #edff21); ">
         <form role="form" action="<?= base_url();?>Home/tambahasp" method="post" enctype="multipart/form-data">
         <div class="container">
              <h3 class="text-center mt-3" style="color: white">Formulir Aspirasi</h3><hr>
@@ -511,7 +511,7 @@
     <!-- Modal -->
   <div class="modal fade custom_search_pop" id="exampleRekomendasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content" style="background: linear-gradient(#00BFFF,   #87CEFA); ">
+      <div class="modal-content" style="background: linear-gradient(#ff4d21,   #edff21); ">
         <form role="form" action="<?= base_url();?>Home/tambahpgj" method="post" enctype="multipart/form-data">
         <div class="container">
              <h3 class="text-center mt-3" style="color: white">Rekomendasi Wisata</h3><hr>

@@ -7,7 +7,7 @@
       <img  style="width: 200px; height: 80px" src="<?= base_url();?>assets/users/gambar/logo.png">
     </div>
     <div class="col-xs-8">
-      <h3 class="box-title" style="background-color: white">Data Aspirasi Kabupaten Ogan Komering Ilir<br>Dinas Pariwisata Dan Kebudayaan</h3>
+      <h3 class="box-title" style="background-color: white">Data Aspirasi Kota Pagaralam<br>Dinas Pariwisata Dan Kebudayaan</h3>
     </div>
   </div>
     <hr>
@@ -15,7 +15,7 @@
                <table id="example2" class="table table-striped table-bordered data table-responsive"  style="width:100%" border="1">
                 <thead>
                   <tr>
-                    <td colspan="4" bgcolor="yellow" align="center">Data Aspirasi Dinas Pariwisata Dan Kebudayaan Kabupaten Ogan Komering Ilir</td>
+                    <td colspan="4" bgcolor="yellow" align="center">Data Aspirasi Dinas Pariwisata Dan Kebudayaan Kota Pagaralam</td>
                   </tr>
                 <tr>
                  <th>ID Aspirasi</th>

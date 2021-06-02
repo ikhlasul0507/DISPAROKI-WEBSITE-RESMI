@@ -15,7 +15,7 @@
                                 </a>
                             </div>
                             
-                            <p><?= $a['alamat'];?><br>
+                                <p><?= $a['alamat'];?><br>
                                 <a href="#"> <?= $a['handphone'];?></a> <br>
                                 <a href="#"></a>
                             </p>
@@ -100,7 +100,7 @@
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Development is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Beramal.com</a> || Powered by Pemerintah Kabupaten Ogan Komering Ilir
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Development is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Reza POLSRI</a> || Powered by Pemerintah Kota Pagaralam
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>

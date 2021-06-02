@@ -5,7 +5,7 @@ class Profil extends CI_Controller {
 
 	public function index()
 	{
-		$data['title']= "Profil Dinas Pariwisata Ogan Komering Ilir";
+		$data['title']= "Profil Dinas Pariwisata Kota Pagaralam";
 		$data['wisata'] = $this->Model_user->Allwisata();
 		$data['sarana'] = $this->Model_user->Allsarana();
 		$data['media'] = $this->Model_user->Allmedia();

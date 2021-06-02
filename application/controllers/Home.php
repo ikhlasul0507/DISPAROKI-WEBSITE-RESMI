@@ -12,7 +12,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$data['title']= "Dinas Pariwisata Ogan Komering Ilir";
+		$data['title']= "Dinas Pariwisata Kota Pagaralam";
 		$data['wisata'] = $this->Model_user->Allwisata();
 		$data['sarana'] = $this->Model_user->Allsarana();
 		$data['media'] = $this->Model_user->Allmedia();

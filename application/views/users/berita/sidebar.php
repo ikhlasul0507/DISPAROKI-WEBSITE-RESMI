@@ -1,6 +1,6 @@
 <div class="col-lg-4" >
                     <div class="blog_right_sidebar" >
-                        <aside class="single_sidebar_widget search_widget" style="background-color: #1f7cbf">
+                        <aside class="single_sidebar_widget search_widget" style="background-color: #edff21">
                             <form method="post" action="<?= base_url();?>cari-pengumuman-pgqdrf7hmhysjdm4eos3/cari">
                                 <div class="form-group">
                                     <div class="input-group mb-3">
@@ -17,7 +17,7 @@
                             </form>
                         </aside>
 
-                        <aside class="single_sidebar_widget post_category_widget" style="background-color: #1f7cbf">
+                        <aside class="single_sidebar_widget post_category_widget" style="background-color: #edff21">
                             <h4 class="widget_title">Kategori</h4>
                             <ul class="list cat-list">
                                 <?php foreach ($wisata as $w):?>
@@ -40,7 +40,7 @@
                             </ul>
                         </aside>
 
-                        <aside class="single_sidebar_widget popular_post_widget" style="background-color: #1f7cbf">
+                        <aside class="single_sidebar_widget popular_post_widget" style="background-color: #edff21">
                             <marquee><h3 class="widget_title">Postingan Terakhir</h3></marquee>
                             <?php foreach ($limit_brtg as $lb):?>
                             <div class="media post_item">

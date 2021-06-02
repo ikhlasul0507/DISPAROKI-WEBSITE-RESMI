@@ -7,7 +7,7 @@
 	<center>
 	<div class="content">
 	 <img  style="width: 200px; height: 80px" src="<?= base_url();?>assets/users/gambar/logo.png">
-    <h3 class="box-title" style="background-color: white">Data Wisata Di Kabupaten Ogan Komering Ilir</h3>
+    <h3 class="box-title" style="background-color: white">Data Wisata Di Kota Pagaralam</h3>
     <hr>
 	<table class="table table-bordered table-striped" border="1" cellspacing="0" cellpadding="2" style="background-color: white;width: 100%">
                  <thead>

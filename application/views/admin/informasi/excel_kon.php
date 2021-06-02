@@ -12,7 +12,7 @@
               <table id="example2" class="table table-striped table-bordered data table-responsive"  style="width:100%" border="1">
                 <thead>
                   <tr>
-                    <td colspan="5" bgcolor="yellow" align="center">Data Kontak Dinas Pariwisata Dan Kebudayaan Kabupaten Ogan Komering Ilir</td>
+                    <td colspan="5" bgcolor="yellow" align="center">Data Kontak Dinas Pariwisata Dan Kebudayaan Kota Pagaralam</td>
                   </tr>
                 <tr>
                   <th>ID Kontak</th>

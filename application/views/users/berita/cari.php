@@ -1,7 +1,7 @@
   <!--================Blog Area =================-->
-    <section class="blog_area section-padding" style="background: linear-gradient(#00BFFF,   #87CEFA);">
+    <section class="blog_area section-padding" style="background: linear-gradient(#ff4d21,   #edff21);">
          <h2 class="text-center">Berita Dan Kegiatan</h2>
-     <h2 class="text-center">Dinas Pariwisata dan Kebudayaan</h2>
+     <h2 class="text-center">Dinas Pariwisata dan Kebudayaan Kota Pagaralam</h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mb-2 mb-lg-0">

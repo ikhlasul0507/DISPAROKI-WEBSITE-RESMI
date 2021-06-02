@@ -61,16 +61,16 @@ class Auth extends CI_Controller {
         			$this->session->set_userdata($data);
         			if($user['role_id'] == 1){
         				$data = $this->session->set_flashdata('pesan', 'Selamat Anda Berhasil Login Sebagai Administrator !');
-        				redirect('Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-HwsrQY8KpqXhVviVjxyZQ59Pns4JvXQHXIsvP1y0LNhihpufwwKUa06Ccdi7my91i3dBioODlQfPKV4vng5p63j3OhFX',$data);
+        				redirect('Dinas-Kebudayaan-Dan-Pariwisata-HwsrQY8KpqXhVviVjxyZQ59Pns4JvXQHXIsvP1y0LNhihpufwwKUa06Ccdi7my91i3dBioODlQfPKV4vng5p63j3OhFX',$data);
         			}elseif($user['role_id'] == 2){
         				$data = $this->session->set_flashdata('pesan', 'Selamat Anda Berhasil Login Sebagai Kepala Dinas !');
-        				redirect('Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-HwsrQY8KpqXhVviVjxyZQ59Pns4JvXQHXIsvP1y0LNhihpufwwKUa06Ccdi7my91i3dBioODlQfPKV4vng5p63j3OhFX',$data);
+        				redirect('Dinas-Kebudayaan-Dan-Pariwisata-HwsrQY8KpqXhVviVjxyZQ59Pns4JvXQHXIsvP1y0LNhihpufwwKUa06Ccdi7my91i3dBioODlQfPKV4vng5p63j3OhFX',$data);
         			}elseif($user['role_id'] == 3){
         				$data = $this->session->set_flashdata('pesan', 'Selamat Anda Berhasil Login Sebagai Kepala Bagian !');
-        				redirect('Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-HwsrQY8KpqXhVviVjxyZQ59Pns4JvXQHXIsvP1y0LNhihpufwwKUa06Ccdi7my91i3dBioODlQfPKV4vng5p63j3OhFX',$data);
+        				redirect('Dinas-Kebudayaan-Dan-Pariwisata-HwsrQY8KpqXhVviVjxyZQ59Pns4JvXQHXIsvP1y0LNhihpufwwKUa06Ccdi7my91i3dBioODlQfPKV4vng5p63j3OhFX',$data);
         			}else{
         				$data = $this->session->set_flashdata('pesan', 'Selamat Anda Berhasil Login Sebagai Pegawai !');
-        				redirect('Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-HwsrQY8KpqXhVviVjxyZQ59Pns4JvXQHXIsvP1y0LNhihpufwwKUa06Ccdi7my91i3dBioODlQfPKV4vng5p63j3OhFX',$data);
+        				redirect('Dinas-Kebudayaan-Dan-Pariwisata-HwsrQY8KpqXhVviVjxyZQ59Pns4JvXQHXIsvP1y0LNhihpufwwKUa06Ccdi7my91i3dBioODlQfPKV4vng5p63j3OhFX',$data);
         			}
         		}else{
         			//jika Akses Tidak Benar

@@ -5,7 +5,7 @@
   foreach ($info as $a): ?>
  <!-- header-start -->
     <header>
-        <div class="header-area " style="background: linear-gradient(to left,#00BFFF,   #87CEFA); ">
+        <div class="header-area " style="background: linear-gradient(to left,#ff4d21,   #edff21); ">
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid">
                     <div class="header_bottom_border">
@@ -22,9 +22,9 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a class="active" href="<?= base_url();?>">Home</a></li>
-                                            <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-OcXpeRqt1DVZVG6yibaH">Profil</a></li>
+                                            <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-OcXpeRqt1DVZVG6yibaH">Profil</a></li>
                                             <li><a href="#">Destinasi<i class="ti-angle-down"></i></a>
-                                                <ul class="submenu" style="background: linear-gradient(#00BFFF,   #87CEFA)">
+                                                <ul class="submenu" style="background: linear-gradient(#ff4d21,   #edff21)">
                                                         <?php foreach ($wisata as $wst) : ?>
                                                         <li><a href="<?= base_url();?><?= $wst['link'];?>"><?= $wst['nama_wisata']; ?></a></li>
                                                         <!-- -->
@@ -32,22 +32,22 @@
                                                 </ul>
                                             </li>
                                             <li><a href="#">Sarana<i class="ti-angle-down"></i></a>
-                                                <ul class="submenu" style="background: linear-gradient(#00BFFF,   #87CEFA)">
+                                                <ul class="submenu" style="background: linear-gradient(#ff4d21,   #edff21)">
                                                     <?php foreach ($sarana as $srn) : ?>
                                                      <li><a href="<?= base_url();?><?= $srn['link'];?>"><?= $srn['nama_sarana']; ?></a></li>
                                                      <?php endforeach; ?>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Budaya<i class="ti-angle-down"></i></a>
-                                                <ul class="submenu" style="background: linear-gradient(#00BFFF,   #87CEFA)">
+                                                <ul class="submenu" style="background: linear-gradient(#ff4d21,   #edff21)">
                                                     <?php foreach ($budaya as $bd) : ?>
                                                      <li><a href="<?= base_url();?><?= $bd['link_budaya'];?>"><?= $bd['nama_budaya']; ?></a></li>
                                                      <?php endforeach; ?>
                                                 </ul>
                                             </li>
-                                            <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-apOCTu0m6DNT3G1w5bFq">Berita</a></li>
-                                            <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-8Z6iygjfhfgBvQFWt1OQ">Galeri</a></li>
-                                            <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-iwAuR0baOjR4tc2t9wfh">Pengaduan</a></li>
+                                            <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-apOCTu0m6DNT3G1w5bFq">Berita</a></li>
+                                            <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-8Z6iygjfhfgBvQFWt1OQ">Galeri</a></li>
+                                            <li><a href="<?= base_url();?>Dinas-Kebudayaan-Dan-Pariwisata-iwAuR0baOjR4tc2t9wfh">Pengaduan</a></li>
                                             
                                         </ul>
                                     </nav>

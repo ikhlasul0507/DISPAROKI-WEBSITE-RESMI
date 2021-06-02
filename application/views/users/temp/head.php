@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:title" content="Selamat Datang" />
-    <meta property="og:description" content="Dinas Kebudayaan Dan Pariwisata Kabupaten Ogan Komering Ilir" />
+    <meta property="og:description" content="Dinas Kebudayaan Dan Pariwisata Kota Pagaralam" />
     
     <meta content='<?= base_url('assets/users/');?>gambar/logo.png' property='og:image'/>
     <!-- <link rel="manifest" href="site.webmanifest"> -->
@@ -43,5 +43,5 @@
     
 </head>
 
-<body style="background: linear-gradient(#00BFFF,   #87CEFA); ">
+<body style="background: linear-gradient(#ff4d21,   #edff21); ">
 

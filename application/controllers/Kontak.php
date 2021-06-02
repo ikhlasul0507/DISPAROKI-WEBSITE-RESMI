@@ -5,7 +5,7 @@ class Kontak extends CI_Controller {
 
 	public function index()
 	{
-		$data['title']= "Kontak Dinas Pariwisata Ogan Komering Ilir";
+		$data['title']= "Kontak Dinas Pariwisata Kota Pagaralam";
 		$data['wisata'] = $this->Model_user->Allwisata();
 		$data['sarana'] = $this->Model_user->Allsarana();
 		$data['media'] = $this->Model_user->Allmedia();

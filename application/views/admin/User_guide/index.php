@@ -90,7 +90,7 @@
                             </div>
                             <div id="collapse0" class="panel-collapse collapse">
                               <div class="box-body">
-                                Pada Halaman data wisata,merupakan tampilan data wisata pada dinas kabudayaan dan pariwisata kabupaten ogan komering , dan pengeloaanya dapat dilakukan oleh admin, kepala dinas, dan kepala bagian. adapun pengelolaannya dapat beruapa :
+                                Pada Halaman data wisata,merupakan tampilan data wisata pada dinas kabudayaan dan pariwisata Kota Pagaralam , dan pengeloaanya dapat dilakukan oleh admin, kepala dinas, dan kepala bagian. adapun pengelolaannya dapat beruapa :
                                 <ol>
                                   <li>Tambah wisata<br>Untuk Menambahkan wisata, Tekan tombol <b>Tambah </b>Di atas tabel. kemudian isi data seusai formulir, pada data koordinat lotitude dan longitude. bisa menggunakan google map. lihat panduan berikut :<br><iframe width="560" height="315" src="https://www.youtube.com/embed/ulnns12dr-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>Dan juga bisa gunakan tombol <b>Koordinat</b> diatas tabel.</li>
                                   <li>Laporan Excel<br>Untuk merekap data wisata secara keseluruhan dalam bentuk excel dengan cara menekan tombol <b>Excel</b> diatas tabel.</li>
@@ -119,7 +119,7 @@
                             </div>
                             <div id="collapse" class="panel-collapse collapse">
                               <div class="box-body">
-                                Pada Halaman data budaya,merupakan tampilan data budaya pada dinas kabudayaan dan pariwisata kabupaten ogan komering , dan pengeloaanya dapat dilakukan oleh admin, kepala dinas, dan kepala bagian. adapun pengelolaannya dapat beruapa :
+                                Pada Halaman data budaya,merupakan tampilan data budaya pada dinas kabudayaan dan pariwisata Kota Pagaralam , dan pengeloaanya dapat dilakukan oleh admin, kepala dinas, dan kepala bagian. adapun pengelolaannya dapat beruapa :
                                 <ol>
                                   <li>Tambah budaya<br>Untuk Menambahkan budaya, Tekan tombol <b>Tambah </b>Di atas tabel. kemudian isi data seusai formulir, pada data koordinat lotitude dan longitude. bisa menggunakan google map. lihat panduan berikut :<br><iframe width="560" height="315" src="https://www.youtube.com/embed/ulnns12dr-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>Dan juga bisa gunakan tombol <b>Koordinat</b> diatas tabel.</li>
                                   <li>Laporan Excel<br>Untuk merekap data budaya secara keseluruhan dalam bentuk excel dengan cara menekan tombol <b>Excel</b> diatas tabel.</li>
@@ -148,7 +148,7 @@
                             </div>
                             <div id="collapse1" class="panel-collapse collapse">
                               <div class="box-body">
-                                Pada Halaman data sarana,merupakan tampilan data sarana pada dinas kabudayaan dan pariwisata kabupaten ogan komering , dan pengeloaanya dapat dilakukan oleh admin, kepala dinas, dan kepala bagian. adapun pengelolaannya dapat beruapa :
+                                Pada Halaman data sarana,merupakan tampilan data sarana pada dinas kabudayaan dan pariwisata Kota Pagaralam , dan pengeloaanya dapat dilakukan oleh admin, kepala dinas, dan kepala bagian. adapun pengelolaannya dapat beruapa :
                                 <ol>
                                   <li>Tambah Sarana<br>Untuk Menambahkan Sarana, Tekan tombol <b>Tambah </b>Di atas tabel. kemudian isi data seusai formulir, pada data koordinat lotitude dan longitude. bisa menggunakan google map. lihat panduan berikut :<br><iframe width="560" height="315" src="https://www.youtube.com/embed/ulnns12dr-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>Dan juga bisa gunakan tombol <b>Koordinat</b> diatas tabel.</li>
                                   <li>Laporan Excel<br>Untuk merekap data sarana secara keseluruhan dalam bentuk excel dengan cara menekan tombol <b>Excel</b> diatas tabel.</li>
@@ -427,7 +427,7 @@
                             </div>
                             <div id="collapse12" class="panel-collapse collapse">
                               <div class="box-body">
-                                Pada halaman berita , merupakan tampilan pengeloaan data berita pada dinas kebudayan dan pariwisata kabupaten ogan komering ilir. pengeloaan nya dapat dilakukan oleh semua akses, adapun pengelolaan berupa :
+                                Pada halaman berita , merupakan tampilan pengeloaan data berita pada dinas kebudayan dan pariwisata Kota Pagaralam .. pengeloaan nya dapat dilakukan oleh semua akses, adapun pengelolaan berupa :
                                 <ol>
                                   <li>Status Berita<br>Jika Status Berita <b>"Tayang Dilokal"</b> yang artinya berita hanya dapat dilihat oleh akses yang login untuk mengubahnya tekan tombol <b>Tayang di lokal</b>, jika status berita <b>"Tayang dipublic"</b> yang artinya berita sedang ditayangkan dan berita dapat dilihat oleh publik maupun akses yang sedang login, untuk mengubahnya tekan tombol <b>Tayang dipublik</b></li>
                                   <li>Edit Berita <br>Pada menu edit berita, jika berita tersebut akan diedit, bisa menekan tombol edit berwarna <b>Biru</b> dan lakukan edit data ,kemudian tekan tombol <b>Edit</b></li>
@@ -473,7 +473,7 @@
                             </div>
                             <div id="collapse14" class="panel-collapse collapse">
                               <div class="box-body">
-                                Pada menu data kontak, berupa tampilan semua data kontak yang masuk yang disampaikan oleh publik terhadap dinas kebudayaan dan pariwista kabupaten ogan komering ilir. adapun pengelolaan nya dapat dilakukan oleh samua akses, beberapa pengeloaan yang dapat dilakukan adalah :
+                                Pada menu data kontak, berupa tampilan semua data kontak yang masuk yang disampaikan oleh publik terhadap dinas kebudayaan dan pariwista Kota Pagaralam .. adapun pengelolaan nya dapat dilakukan oleh samua akses, beberapa pengeloaan yang dapat dilakukan adalah :
                                 <ol>  
                                     <li>Hapus Data<br>Pada Menu hapus data, dapat melakukan hapus data dengan menekan tombol <b>  Warna Merah</b> disebelah kanan yang sejajar dengan data yang akan dihapus.</li>
                                     <li>Kirim Email<br>Pada Menu kirim email , dapat melakukan kirim email dengan menekan tombol <b>  Warna Hijau</b> disebelah kanan yang sejajar dengan data yang akan dikirim email.</li>
@@ -493,7 +493,7 @@
                             </div>
                             <div id="collapse15" class="panel-collapse collapse">
                               <div class="box-body">
-                                Pada menu aspirasi, berupa tampilan aspirasi yang disampaikan oleh public terhadap dinas kebudayaan dan pariwisata kabupaten ogan komering ilir. adapun pengelolaannya dapat dilakukan oleh semua akses, beberapa pengelolaan yang di lakukan :
+                                Pada menu aspirasi, berupa tampilan aspirasi yang disampaikan oleh public terhadap dinas kebudayaan dan pariwisata Kota Pagaralam .. adapun pengelolaannya dapat dilakukan oleh semua akses, beberapa pengelolaan yang di lakukan :
                                 <ol>  
                                     <li>Hapus Data <br>Pada Hapus Data, untuk menghapus data silahkan tekan tombol <b>  Sebelah Akan Berwarna Merah</b> yang sejajar dengan data yang akan dihapus.  </li>
                                     <li>Laporan Excel<br> Untuk membuat laporan semua data aspirasi yang masuk dalam bentuk excel, dapat menekan tombol <b> Excel</b> Diatas Tabel </li>
@@ -550,7 +550,7 @@
                                 Pada Halaman Info Dispar, Semua Akses dapat melakukan pengelolaan pada menu ini, berupa :
                                 <ol>
                                   <li>Logo<br>Pada Menu Logo, pengelolaan dapat mengganti logo, dengan ketentuan photo logo maksimal 3 Mb. dan Dianjurkan dengan format PNG</li>
-                                  <li>Alamat<br>Alamat dapat di ganti sesuai dengan alamat dinas kebudayaan dan pariwisata kabupaten ogan komering ilir</li>
+                                  <li>Alamat<br>Alamat dapat di ganti sesuai dengan alamat dinas kebudayaan dan pariwisata Kota Pagaralam .</li>
                                   <li>Handphone<br> Pada menu handphone dapat diganti dengan handphone yang akan digunakan</li>
                                   <li>Email<br>Pada menu email dapat di ganti dengan email yang akan digunakan.</li>
                                 </ol>
@@ -590,7 +590,7 @@
                                       <div class="box-body">
                                         <dl>
                                           <dt>Kalender Agenda</dt>
-                                          <dd>Menu Kalender agenda pada sistem digunakan untuk merekap agenda yang akan dilaksanakan, jika agenda tersebut mendekati 10 hari maka akan berwarna <b>merah</b>, jika agenda mendekati 100 hari akan berwarna <b>kuning</b> dan jauh hari akan berwarna <b>hijau</b>.<br>Pengelolaan Kalender dapat dilakukan oleh admin, kepala dinas, kepala bagian, dan pegawai. pengelolaan tersebut dapat berupa hapus, edit, atau menambahkan agenda kegiatan pada dinas kebudayaan dan pariwisata kabupaten ogan komering ilir provinsi sumatera selatan.</dd>
+                                          <dd>Menu Kalender agenda pada sistem digunakan untuk merekap agenda yang akan dilaksanakan, jika agenda tersebut mendekati 10 hari maka akan berwarna <b>merah</b>, jika agenda mendekati 100 hari akan berwarna <b>kuning</b> dan jauh hari akan berwarna <b>hijau</b>.<br>Pengelolaan Kalender dapat dilakukan oleh admin, kepala dinas, kepala bagian, dan pegawai. pengelolaan tersebut dapat berupa hapus, edit, atau menambahkan agenda kegiatan pada dinas kebudayaan dan pariwisata Kota Pagaralam . provinsi sumatera selatan.</dd>
                                         </dl>
                                       </div>
                                       <!-- /.box-body -->

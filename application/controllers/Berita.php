@@ -5,7 +5,7 @@ class Berita extends CI_Controller {
 
 	public function index()
 	{
-		$data['title']= "Berita Dinas Pariwisata Ogan Komering Ilir";
+		$data['title']= "Berita Dinas Pariwisata Kota Pagaralam";
 		$this->load->library('pagination');
 		//config
 				$config['base_url']= base_url().'Berita/index';
@@ -67,7 +67,7 @@ class Berita extends CI_Controller {
 	}
 	public function detail($id_berita)
 	{
-		$data['title']= "Detail Berita Dinas Pariwisata Ogan Komering Ilir";
+		$data['title']= "Detail Berita Dinas Pariwisata Kota Pagaralam";
 		$data['wisata'] = $this->Model_user->Allwisata();
 		$data['sarana'] = $this->Model_user->Allsarana();
 		$data['media'] = $this->Model_user->Allmedia();
@@ -90,7 +90,7 @@ class Berita extends CI_Controller {
 	{
 		
 
-		$data['title']= "Berita Dinas Pariwisata Ogan Komering Ilir";
+		$data['title']= "Berita Dinas Pariwisata Kota Pagaralam";
 
 		$cari = $this->input->post('cari');
 

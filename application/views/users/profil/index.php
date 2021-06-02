@@ -1,10 +1,10 @@
  <!-- bradcam_area  -->
     <!-- <div class="bradcam_area" style="background-image: ('/assets/users/gambar/pantai.jpg')"> -->
-            <div class="row" style="background: linear-gradient(#00BFFF,   #87CEFA);">
+            <div class="row" style="background: linear-gradient(#ff4d21,   #edff21);">
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
                         <h2>PROFIL</h2>
-                        <h2>DINAS KEBUDAYAAN DAN PARIWISATA<BR>KABUPATEN OGAN KOMERING ILIR</h2>
+                        <h2>DINAS KEBUDAYAAN DAN PARIWISATA<BR>KOTA PAGARALAM</h2>
                         <?php foreach ($data_info as $di):?>
                             <img class="card-img rounded-0" style="width: 400px; height: 150px" src="<?= base_url('assets/users/');?>gambar/<?= $di['logo'];?>" alt="">
                         <?php endforeach; ?>
@@ -14,7 +14,7 @@
     <!-- </div> -->
     <!--/ bradcam_area  -->
     
-    <div class="about_story" style="background: linear-gradient(#00BFFF,   #87CEFA);">
+    <div class="about_story" style="background: linear-gradient(#ff4d21,   #edff21);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

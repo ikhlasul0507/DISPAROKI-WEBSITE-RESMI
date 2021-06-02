@@ -364,7 +364,7 @@
         <h5 class="modal-title" id="exampleModalLabel">Version Application</h5>
       </div>
       <div class="modal-body">
-        <p align="center">Official Application of Culture and Tourism Office of Ogan Komering Ilir Regency Is Version 2020-1 designed and made by Sriwijaya State Polytechnic Students</p>
+        <p align="center">Official Application of Culture and Tourism Office of Pagaralam City Is Version 2021-1 designed and made by Sriwijaya State Polytechnic Students</p>
         <center>
         <img src="<?= base_url();?>assets/users/gambar/polsri.png" style="width: 100px;height: 100px">
       </div>

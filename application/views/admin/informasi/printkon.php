@@ -7,7 +7,7 @@
        <img  style="width: 200px; height: 80px" src="<?= base_url();?>assets/users/gambar/logo.png">
     </div>
     <div class="col-xs-8">
-      <h3 class="box-title" style="background-color: white">Data Kontak Kabupaten Ogan Komering Ilir<br>Dinas Pariwisata Dan Kebudayaan</h3>
+      <h3 class="box-title" style="background-color: white">Data Kontak Kota Pagaralam<br>Dinas Pariwisata Dan Kebudayaan</h3>
     </div>
   </div>
     <hr>

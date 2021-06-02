@@ -1,7 +1,7 @@
 
    
 
-<section class="blog_area single-post-area section-padding" style="background: linear-gradient(#00BFFF,   #87CEFA);">
+<section class="blog_area single-post-area section-padding" style="background: linear-gradient(#ff4d21,   #edff21);">
       <div class="container">
          <div class="row">
             <div class="col-lg-8 posts-list">
@@ -20,8 +20,8 @@
                         <?= $br->deskripsiberita1; ?>
                      </p>
                     
-                     <div class="quote-wrapper" style="color: black" style="background: linear-gradient(#00BFFF,   #87CEFA);">
-                        <div class="quotes" style="background: linear-gradient(#00BFFF,   #87CEFA);">
+                     <div class="quote-wrapper" style="color: black" style="background: linear-gradient(#ff4d21,   #edff21);">
+                        <div class="quotes" style="background: linear-gradient(#ff4d21,   #edff21);">
                            <?= $br->deskripsiberita2; ?>
                         </div>
                      </div>

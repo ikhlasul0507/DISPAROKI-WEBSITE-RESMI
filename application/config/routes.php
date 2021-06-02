@@ -58,18 +58,18 @@ $route['opok'] = 'admin';
 //controller admin
 $route['M3GlVDtGPhSIywdOb4Do'] = 'Home';
 
-$route['disparoki'] = 'auth';
+$route['dispar'] = 'auth';
 //controller berita
-$route['Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-apOCTu0m6DNT3G1w5bFq'] = 'Berita';
+$route['Dinas-Kebudayaan-Dan-Pariwisata-apOCTu0m6DNT3G1w5bFq'] = 'Berita';
 //controller detail berita
 $route['br1(:num)5t/detail-pengumuman-KhmmqOdAo8ke86DOVcla'] = 'Berita/detail/$1';
 //controller cari berita
 $route['cari-pengumuman-pgqdrf7hmhysjdm4eos3/(:any)'] = 'Berita/cari/$2';
 //controller galeri
-$route['Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-8Z6iygjfhfgBvQFWt1OQ'] = 'Galeri';
+$route['Dinas-Kebudayaan-Dan-Pariwisata-8Z6iygjfhfgBvQFWt1OQ'] = 'Galeri';
 //controller kontak
-$route['Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-iwAuR0baOjR4tc2t9wfh'] = 'Kontak';
+$route['Dinas-Kebudayaan-Dan-Pariwisata-iwAuR0baOjR4tc2t9wfh'] = 'Kontak';
 //controller profil
-$route['Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-OcXpeRqt1DVZVG6yibaH'] = 'Profil';
+$route['Dinas-Kebudayaan-Dan-Pariwisata-OcXpeRqt1DVZVG6yibaH'] = 'Profil';
 //controller admin
-$route['Dinas-Kebudayaan-Dan-Pariwisata-Kabupaten-Ogan-Komering-Ilir-HwsrQY8KpqXhVviVjxyZQ59Pns4JvXQHXIsvP1y0LNhihpufwwKUa06Ccdi7my91i3dBioODlQfPKV4vng5p63j3OhFX'] = 'Admin';
+$route['Dinas-Kebudayaan-Dan-Pariwisata-HwsrQY8KpqXhVviVjxyZQ59Pns4JvXQHXIsvP1y0LNhihpufwwKUa06Ccdi7my91i3dBioODlQfPKV4vng5p63j3OhFX'] = 'Admin';

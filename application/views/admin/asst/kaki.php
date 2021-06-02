@@ -2,9 +2,9 @@
  
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2020-1
+      <b>Version</b> 2021-1
     </div>
-    <strong>Copyright &copy; <?= date('Y'); ?> Ikhlasul Amal.</strong> All rights
+    <strong>Copyright &copy; <?= date('Y'); ?> Reza Politeknik Negeri Sriwijaya.</strong> All rights
     reserved.
   </footer>
 

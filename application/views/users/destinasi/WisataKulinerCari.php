@@ -1,5 +1,5 @@
-<div class="header justify-content-center" style="background: linear-gradient(#00BFFF,   #87CEFA);">
-    <h4 class="text-center">Persebaran Wisata Kuliner Di Kabupaten Ogan Komering Ilir</h4>
+<div class="header justify-content-center" style="background: linear-gradient(#ff4d21,   #edff21);">
+    <h4 class="text-center">Persebaran Wisata Kuliner Di Kabupaten Kota Pagaralam</h4>
 </div>
 <div id="<?php if($peta['is_active']==1){ echo "mapid";}?>" style="z-index: 2"></div>
 <style type="text/css">
@@ -9,7 +9,7 @@
     //setting map koordinat awal
     //level zoom pada map
     <?php $a= $peta['zoom']; ?>
-    var mymap = L.map('mapid').setView([-3.3848781, 104.8191939], <?= $a;?>);
+    var mymap = L.map('mapid').setView([-4.03756, 103.1992472], <?= $a;?>);
     
     //setting token
     ACCESS_TOKEN = 'pk.eyJ1IjoiaWtobGFzdWwwNTA3IiwiYSI6ImNrOTY3cDJkNTBoeWYzcGwyeXhzMWR6c2wifQ.c3kroaKoyobXOSngsVKOTw';
@@ -53,8 +53,8 @@
     <?php } ?>
    
      //setting marker dan popup
-    L.marker([-3.3920611,104.8300743],{icon:iconlogo}).addTo(mymap)
-    .bindPopup("<center><img src='<?= base_url();?>assets/users/gambar/logo.png' width='200px' height='150px'><br><h4>Dinas Kebudayaan Dan Pariwisata</h4><br>Kabupaten Ogan Komering Ilir")
+    L.marker([-4.03756, 103.1992472],{icon:iconlogo}).addTo(mymap)
+    .bindPopup("<center><img src='<?= base_url();?>assets/users/gambar/logo.png' width='200px' height='150px'><br><h4>Dinas Kebudayaan Dan Pariwisata</h4><br>Kabupaten Kota Pagaralam")
     .openPopup();
 
     //popup ambil koordinat ketika peta diklik
@@ -68,7 +68,7 @@
     mymap.on('click', onMapClick);
    </script>
 
-    <div class="popular_places_area" style="background: linear-gradient(#00BFFF,   #87CEFA);">
+    <div class="popular_places_area" style="background: linear-gradient(#ff4d21,   #edff21);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">

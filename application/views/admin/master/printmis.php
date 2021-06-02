@@ -29,7 +29,7 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th colspan="2">Copyright@Dinas Pariwisata dan Kebudayaan Ogan Komering Ilir</th>
+                  <th colspan="2">Copyright@Dinas Pariwisata dan Kebudayaan Kota Pagaralam</th>
                  
                 </tr>
                 </tfoot>

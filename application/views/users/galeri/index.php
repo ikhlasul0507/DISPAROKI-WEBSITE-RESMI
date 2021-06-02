@@ -1,11 +1,11 @@
  <!-- popular_destination_area_start  -->
-    <div class="popular_destination_area" style="background: linear-gradient(#00BFFF,   #87CEFA);">
+    <div class="popular_destination_area" style="background: linear-gradient(#ff4d21,   #edff21);">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb_70">
                         <h3>Galeri Foto</h3>
-                        <p style="color: white">Dinas Pariwisata dan Kebudayaan Ogan Komering Ilir</p>
+                        <p style="color: white">Dinas Pariwisata dan Kebudayaan Kota Pagaralam</p>
                     </div>
                 </div>
             </div>
